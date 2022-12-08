@@ -1,10 +1,9 @@
-import { GradeSection } from "./components/GradeSection";
+import { Router } from "./routes/Routes";
 
 function App() {
   return (
     <>
-      <div className="App"></div>
-      <GradeSection/>
+      <Router />
     </>
   );
 }
