@@ -1,11 +1,9 @@
-import { GradeSection } from "./components/GradeSection";
-import { MilitarySection } from "./components/MilitarySection";
+import { Router } from "./routes/Routes";
 
 function App() {
   return (
     <>
-      <div className="App"></div>
-      <MilitarySection/>
+      <Router />
     </>
   );
 }
