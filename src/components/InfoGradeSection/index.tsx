@@ -1,5 +1,5 @@
 import { Flex, Text, Image } from "@chakra-ui/react";
-import { IContentData } from "../../interfaces/InfoGradeSection.interface";
+import { IContentData } from "../../interfaces/InfoSection.interface";
 
 export const InfoGradeSection = ({ content }: IContentData) => {
   return (

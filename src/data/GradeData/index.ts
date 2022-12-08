@@ -1,4 +1,4 @@
-export const infoTitle= [
+export const infoGradeTitle= [
     {
       title: "Quem somos",
       content: [
