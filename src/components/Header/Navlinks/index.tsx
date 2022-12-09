@@ -1,8 +1,5 @@
-import { Box, Divider, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
 import { MenuItem } from "./MenuItem";
-import { AiFillCar } from "react-icons/ai";
-import { GiPriceTag } from "react-icons/gi";
-import { BiUserCircle } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 interface NavLinksProps {
@@ -18,11 +15,12 @@ export const NavLinks = ({ isOpen }: NavLinksProps) => {
       flexBasis={{ base: "100%", md: "auto" }}
     >
       <Stack
-        spacing={[4, 4, 4, 10]}
+        spacing={[4, 4, 4, 6]}
         align={["flex-start", "flex-start", "center"]}
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "column", "row", "row"]}
         pt={[10, 10, 10, 0]}
+        paddingRight={[5]}
       >
         <MenuItem to="/">Quem somos</MenuItem>
         <MenuItem to="/">Fundamental I</MenuItem>

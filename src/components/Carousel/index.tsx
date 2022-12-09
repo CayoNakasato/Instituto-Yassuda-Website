@@ -1,8 +1,10 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image } from "@chakra-ui/react";
 
 import "swiper/css";
+import "swiper/css/bundle";
+import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Controller } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { useState } from "react";
 
 export const CarouselComponent = () => {
@@ -10,13 +12,14 @@ export const CarouselComponent = () => {
 
   return (
     <Swiper
-      modules={[Autoplay, Controller]}
-      spaceBetween={50}
+      modules={[Autoplay, Navigation, Pagination]}
+      spaceBetween={0}
       slidesPerView={1}
       autoplay={true}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
-      controller={{ control: controlledSwiper }}
+      navigation={true}
+      pagination={{ clickable: true }}
     >
       <SwiperSlide>
         <Flex flexDir={"column"}>
