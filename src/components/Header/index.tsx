@@ -18,7 +18,7 @@ export const Header = () => {
       justify="space-between"
       wrap="wrap"
       w="100vw"
-      p={["2rem", "2rem", "0"]}
+      p={["2rem", "2rem", "1rem"]}
       boxShadow="0px 3px 8px 0px rgba(0,0,0,0.2)"
     >
       <Image src={Logo} width="150px" />
