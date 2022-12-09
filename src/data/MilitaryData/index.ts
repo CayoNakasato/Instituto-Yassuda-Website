@@ -1,9 +1,9 @@
-import AFA from "../../assets/AFA.jpg"
-import EEAR from "../../assets/EEAR.png"
-import EPCAR from "../../assets/EPCAR.png"
-import ESPECEX from "../../assets/ESPECEX.jpeg"
-import IME from "../../assets/IME.png"
-import ITA from "../../assets/ITA.jpg"
+import AFA from "../../assets/militaryImgs/AFA.jpg"
+import EEAR from "../../assets/militaryImgs/EEAR.png"
+import EPCAR from "../../assets/militaryImgs/EPCAR.png"
+import ESPECEX from "../../assets/militaryImgs/ESPECEX.jpeg"
+import IME from "../../assets/militaryImgs/IME.png"
+import ITA from "../../assets/militaryImgs/ITA.jpg"
 
 export const infoMilitaryTitle = [
   {
