@@ -1,16 +1,16 @@
-import AFA from "../../assets/AFA.jpg"
-import EEAR from "../../assets/EEAR.png"
-import EPCAR from "../../assets/EPCAR.png"
-import ESPECEX from "../../assets/ESPECEX.jpeg"
-import IME from "../../assets/IME.png"
-import ITA from "../../assets/ITA.jpg"
+import AFA from "../../assets/brasõesMilitares/AFA.png"
+import EEAR from "../../assets/brasõesMilitares/EEAR.png"
+import EPCAR from "../../assets/brasõesMilitares/EPCAR.png"
+import ESPECEX from "../../assets/brasõesMilitares/ESPECEX.png"
+import IME from "../../assets/brasõesMilitares/IME.png"
+import ITA from "../../assets/brasõesMilitares/ITA.png"
 
 export const infoMilitaryTitle = [
   {
     title: "AFA",
     content: [
       {
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: AFA,
       },
     ],
@@ -19,7 +19,7 @@ export const infoMilitaryTitle = [
     title: "EEAR",
     content: [
       {
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: EEAR,
       },
     ],
@@ -28,7 +28,7 @@ export const infoMilitaryTitle = [
     title: "EPCAR",
     content: [
       {
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: EPCAR,
       },
     ],
@@ -37,7 +37,7 @@ export const infoMilitaryTitle = [
     title: "ESPECEX",
     content: [
       {
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: ESPECEX,
       },
     ],
@@ -46,7 +46,7 @@ export const infoMilitaryTitle = [
     title: "IME",
     content: [
       {
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: IME,
       },
     ],
@@ -55,7 +55,7 @@ export const infoMilitaryTitle = [
     title: "ITA",
     content: [
       {
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: ITA,
       },
     ],
