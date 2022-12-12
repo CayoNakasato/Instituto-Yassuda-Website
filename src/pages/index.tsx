@@ -5,6 +5,7 @@ import { GradeSection } from "../components/GradeSection";
 import { ContentSection } from "../components/GradeSection/ContentSection";
 import ImageSchool from "../assets/escola 1.jpeg";
 import { Header } from "../components/Header";
+import { MilitarySection } from "../components/MilitarySection";
 
 export const HomePage = () => {
 
@@ -95,6 +96,10 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
       </Box>
+
+      <MilitarySection/>
+
+
       <Footer/>
     </Box>
        
