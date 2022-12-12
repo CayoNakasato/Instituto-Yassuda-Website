@@ -1,17 +1,20 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { CarouselComponent } from "../components/Carousel";
+import { Footer } from "../components/Footer";
 import { GradeSection } from "../components/GradeSection";
 import { ContentSection } from "../components/GradeSection/ContentSection";
 import ImageSchool from "../assets/escola 1.jpeg";
 import { Header } from "../components/Header";
 
 export const HomePage = () => {
+
   return (
     <Box width="100vw">
       <Header />
       <Flex width={["100vw"]}>
         <CarouselComponent />
       </Flex>
+    </>
       <Box>
         <GradeSection hightlight={true}>
           <Heading textAlign={["center"]}>Quem somos</Heading>
@@ -93,6 +96,8 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
       </Box>
+      <Footer/>
     </Box>
+       
   );
 };
