@@ -3,13 +3,12 @@ import { Flex, Image } from "@chakra-ui/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { useState } from "react";
 
 export const CarouselComponent = () => {
-  const [controlledSwiper, setControlledSwiper] = useState(undefined);
-
   return (
     <Swiper
       modules={[Autoplay, Navigation, Pagination]}
