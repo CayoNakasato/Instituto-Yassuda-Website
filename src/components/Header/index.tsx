@@ -2,7 +2,7 @@ import { Flex, Image } from "@chakra-ui/react";
 import { MenuToogle } from "./MenuToogle";
 import { useState } from "react";
 import { NavLinks } from "./Navlinks";
-import Logo from "../../assets/logo 5.1 (3).jpg";
+import Logo from "../../assets/logoEscola/logo.jpg";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
