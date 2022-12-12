@@ -14,7 +14,6 @@ export const HomePage = () => {
       <Flex width={["100vw"]}>
         <CarouselComponent />
       </Flex>
-    </>
       <Box>
         <GradeSection hightlight={true}>
           <Heading textAlign={["center"]}>Quem somos</Heading>
