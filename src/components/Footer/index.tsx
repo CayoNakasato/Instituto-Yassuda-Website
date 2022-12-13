@@ -1,12 +1,18 @@
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import { FaFacebook } from "react-icons/fa";
 import { Box, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
-import style from "./style.module.css";
-import Logo from "../../assets/logoEscola/logoNoBg.png"
+import Logo from "../../assets/logoEscola/logoNoBg.png";
+import { Topics } from "./Topics";
 
 export const Footer = () => {
   return (
-    <Box width="100%" height="400px" margin="0 auto" bg={"lightgray"} padding="1rem">
+    <Box
+      width="100%"
+      height="400px"
+      margin="0 auto"
+      bg={"lightgray"}
+      padding="1rem"
+    >
       <Flex justifyContent="space-evenly" alignItems="center">
         <Flex
           flexDirection="column"
@@ -57,38 +63,22 @@ export const Footer = () => {
           <Heading fontSize="15px" fontWeight="500">
             Páginas
           </Heading>
-          <a className={style.footerLink} href="#">
-            Quem somos
-          </a>
-          <a className={style.footerLink} href="#">
-            Fundamental I
-          </a>
-          <a className={style.footerLink} href="#">
-            Fundamental II
-          </a>
-          <a className={style.footerLink} href="#">
-            Ensino Médio
-          </a>
-          <a className={style.footerLink} href="#">
-            Curso Pré-Vestibular
-          </a>
-          <a className={style.footerLink} href="#">
-            Cursos Pré-Militares
-          </a>
+          <Topics>Quem somos</Topics>
+          <Topics>Fundalmental I</Topics>
+          <Topics>Fundalmental II</Topics>
+          <Topics>Ensino Médio</Topics>
+          <Topics>Curso Pré-Vestibulares</Topics>
+          <Topics>Curso Pré-Militares</Topics>
         </Flex>
 
         <Flex
-          className={style.footerPolitics}
+          paddingBottom="6rem"
           flexDirection="column"
           textAlign="left"
           gap="10px"
         >
-          <a className={style.footerLink} href="#">
-            Termos de Uso
-          </a>
-          <a className={style.footerLink} href="#">
-            Política de Privacidade
-          </a>
+          <Topics>Termos de Uso</Topics>
+          <Topics>Política de Privacidade</Topics>
         </Flex>
       </Flex>
     </Box>

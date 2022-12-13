@@ -3,9 +3,10 @@ import { CarouselComponent } from "../components/Carousel";
 import { Footer } from "../components/Footer";
 import { GradeSection } from "../components/GradeSection";
 import { ContentSection } from "../components/GradeSection/ContentSection";
-import ImageSchool from "../assets/escola 1.jpeg";
+import ImageSchool from "../assets/escola.jpeg";
 import { Header } from "../components/Header";
 import { MilitarySection } from "../components/MilitarySection";
+import { InfoHighlightsSection } from "../components/InfoHighlightsSection";
 
 export const HomePage = () => {
 
@@ -15,6 +16,7 @@ export const HomePage = () => {
       <Flex width={["100vw"]}>
         <CarouselComponent />
       </Flex>
+      <InfoHighlightsSection/>
       <Box>
         <GradeSection hightlight={true}>
           <Heading textAlign={["center"]}>Quem somos</Heading>
