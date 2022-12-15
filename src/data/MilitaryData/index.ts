@@ -1,13 +1,14 @@
-import AFA from "../../assets/brasõesMilitares/AFA.png"
-import EEAR from "../../assets/brasõesMilitares/EEAR.png"
-import EPCAR from "../../assets/brasõesMilitares/EPCAR.png"
-import ESPECEX from "../../assets/brasõesMilitares/ESPECEX.png"
-import IME from "../../assets/brasõesMilitares/IME.png"
-import ITA from "../../assets/brasõesMilitares/ITA.png"
+import AFA from "../../assets/brasõesMilitares/AFA.png";
+import EEAR from "../../assets/brasõesMilitares/EEAR.png";
+import EPCAR from "../../assets/brasõesMilitares/EPCAR.png";
+import ESPECEX from "../../assets/brasõesMilitares/ESPECEX.png";
+import IME from "../../assets/brasõesMilitares/IME.png";
+import ITA from "../../assets/brasõesMilitares/ITA.png";
 
-export const infoMilitaryTitle = [
+export const infoMilitaryData = [
   {
     title: "AFA",
+    link: "https://www2.fab.mil.br/afa/",
     content: [
       {
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
@@ -23,6 +24,7 @@ export const infoMilitaryTitle = [
         img: EEAR,
       },
     ],
+    link: "https://www2.fab.mil.br/eear/",
   },
   {
     title: "EPCAR",
@@ -32,6 +34,7 @@ export const infoMilitaryTitle = [
         img: EPCAR,
       },
     ],
+    link: "https://www2.fab.mil.br/epcar/",
   },
   {
     title: "ESPECEX",
@@ -41,6 +44,7 @@ export const infoMilitaryTitle = [
         img: ESPECEX,
       },
     ],
+    link: "https://espcex.eb.mil.br/",
   },
   {
     title: "IME",
@@ -50,6 +54,7 @@ export const infoMilitaryTitle = [
         img: IME,
       },
     ],
+    link: "http://www.ime.eb.mil.br/",
   },
   {
     title: "ITA",
@@ -59,5 +64,6 @@ export const infoMilitaryTitle = [
         img: ITA,
       },
     ],
+    link: "http://www.ita.br/",
   },
 ];

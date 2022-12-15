@@ -11,7 +11,7 @@ export const Topics = ({children}: ITopicsProps) =>{
             color="#000000"
             paddingLeft="10px"
             fontSize="15px"
-            text-decoration="none"
+            textDecoration="none"
             href="#"
             _hover={{
                 color: "red",

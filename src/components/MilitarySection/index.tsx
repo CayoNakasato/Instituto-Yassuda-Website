@@ -1,5 +1,5 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
-import { infoMilitaryTitle } from "../../data/MilitaryData";
+import { infoMilitaryData } from "../../data/MilitaryData";
 import { InfoMilitarySection } from "../InfoMilitarySection";
 
 export const MilitarySection = () => {
@@ -10,10 +10,13 @@ export const MilitarySection = () => {
       alignItems="center"
       gap="3rem"
       minHeight="650px"
+      bg="red"
+      width="100%"
+      wrap="wrap"
     >
       <Heading>Cursos Pré-Militares</Heading>
-      <Flex justifyContent="center" gap="5rem">
-        {infoMilitaryTitle.map((info, index) => {
+      <Flex overflow="auto" justifyContent="center" minWidth="90%" gap="5rem" bg="blue">
+        {infoMilitaryData.map((info, index) => {
           return (
             <Flex
               flexDirection="column"

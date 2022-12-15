@@ -13,7 +13,12 @@ export const Footer = () => {
       bg={"lightgray"}
       padding="1rem"
     >
-      <Flex justifyContent="space-evenly" alignItems="center">
+      <Flex
+        flexDirection={["column", "column", "column", "column", "row"]}
+        justifyContent="space-evenly"
+        alignItems="center"
+        gap={["3rem", "3rem", "3rem", "3rem", "0"]}
+      >
         <Flex
           flexDirection="column"
           alignItems="center"
