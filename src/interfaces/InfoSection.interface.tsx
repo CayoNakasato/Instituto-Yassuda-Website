@@ -1,6 +1,6 @@
 export interface IContentData {
-    content: {
-      text: string;
-      img: string;
-    }[];
-  }
+  content: {
+    text: string;
+    img: string;
+  }[];
+}

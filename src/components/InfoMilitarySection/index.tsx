@@ -5,13 +5,13 @@ export const InfoMilitarySection = ({ content }: IContentData) => {
   return (
     <>
       {content.map((info, index) => {
+        console.log(info)
         return (
-          <Box>
+          <Box key={index}>
             <Flex
               gap={"1rem"}
               flexDirection="column"
               alignItems="center"
-              key={index}
             >
               <Image
                 width="150px"
@@ -23,7 +23,7 @@ export const InfoMilitarySection = ({ content }: IContentData) => {
               <Text>{info.text}</Text>
 
               <Text>
-                <Link paddingLeft="2rem" color="blue" href="#">
+                <Link paddingLeft="2rem" color="blue" href="#" isExternal>
                   Saiba mais...
                 </Link>
               </Text>
