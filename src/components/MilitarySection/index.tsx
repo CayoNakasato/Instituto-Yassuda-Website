@@ -7,26 +7,24 @@ export const MilitarySection = () => {
     <Flex
       flexDirection="column"
       justifyContent="center"
-      alignItems="center"
       gap="3rem"
       minHeight="650px"
-      bg="red"
-      width="100%"
-      wrap="wrap"
     >
-      <Heading>Cursos Pré-Militares</Heading>
-      <Flex overflow="auto" justifyContent="center" minWidth="90%" gap="5rem" bg="blue">
+      <Heading margin={"0 auto"} size="2xl">Cursos Pré-Militares</Heading>
+      <Flex overflow="auto" gap="3rem">
         {infoMilitaryData.map((info, index) => {
           return (
             <Flex
+              key={index}
               flexDirection="column"
-              width="170px"
+              minWidth="200px"
+              width={"100%"}
               alignItems="center"
               gap="1rem"
-              key={index}
-              minHeight="550px"
+              maxHeight="500px"
+              padding={"1rem"}
             >
-              <Heading fontSize="28px">{info.title}</Heading>
+              <Heading size="lg" >{info.title}</Heading>
 
               <InfoMilitarySection content={info.content} />
             </Flex>

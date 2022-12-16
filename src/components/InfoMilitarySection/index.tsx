@@ -5,25 +5,32 @@ export const InfoMilitarySection = ({ content }: IContentData) => {
   return (
     <>
       {content.map((info, index) => {
-        console.log(info)
         return (
           <Box key={index}>
             <Flex
               gap={"1rem"}
               flexDirection="column"
               alignItems="center"
+              margin={"0 auto"}
+              width="80%"
             >
               <Image
-                width="150px"
+                maxWidth="150px"
+                width={"100%"}
                 borderRadius="5px"
                 src={info.img}
                 alt="Brasão"
               />
 
-              <Text>{info.text}</Text>
+              <Text size="md">{info.text}</Text>
 
               <Text>
-                <Link paddingLeft="2rem" color="blue" href="#" isExternal>
+                <Link
+                  paddingLeft="2rem"
+                  href={info.link}
+                  isExternal
+                  color={"blue"}
+                >
                   Saiba mais...
                 </Link>
               </Text>

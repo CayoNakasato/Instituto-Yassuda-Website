@@ -6,9 +6,15 @@ import { ReactNode } from "react";
 interface SectionProps {
   children: ReactNode;
   hightlight?: boolean;
+  noFooter?: boolean;
 }
 
-export const GradeSection = ({ children, hightlight }: SectionProps) => {
+export const GradeSection = ({
+  children,
+  hightlight,
+  noFooter,
+}: SectionProps) => { 
+  console.log(children)
   return (
     <Box
       bg={hightlight ? "#F3533E" : "white"}
@@ -17,7 +23,13 @@ export const GradeSection = ({ children, hightlight }: SectionProps) => {
       p={["1rem 0"]}
     >
       {hightlight && (
-        <Image src={bottomWave} position="absolute" top="-1px" width='100%' h={"60px"} />
+        <Image
+          src={bottomWave}
+          position="absolute"
+          top="-2px"
+          width="100%"
+          h={"60px"}
+        />
       )}
 
       <Flex
@@ -34,7 +46,8 @@ export const GradeSection = ({ children, hightlight }: SectionProps) => {
           h={"60px"}
           src={topWave}
           position="absolute"
-          bottom="0px"
+          bottom="-1px"
+          display={noFooter ? "none" : "block"}
         />
       )}
     </Box>
