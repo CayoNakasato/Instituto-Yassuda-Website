@@ -6,7 +6,6 @@ import "swiper/css/pagination";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
-import { useState } from "react";
 
 export const CarouselComponent = () => {
   return (
@@ -15,8 +14,6 @@ export const CarouselComponent = () => {
       spaceBetween={0}
       slidesPerView={1}
       autoplay={true}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
       navigation={true}
       pagination={{ clickable: true }}
     >

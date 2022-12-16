@@ -8,11 +8,11 @@ import ITA from "../../assets/brasõesMilitares/ITA.png";
 export const infoMilitaryData = [
   {
     title: "AFA",
-    link: "https://www2.fab.mil.br/afa/",
     content: [
       {
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: AFA,
+        link: "https://www2.fab.mil.br/afa/",
       },
     ],
   },
@@ -22,9 +22,9 @@ export const infoMilitaryData = [
       {
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: EEAR,
+        link: "https://www2.fab.mil.br/eear/",
       },
     ],
-    link: "https://www2.fab.mil.br/eear/",
   },
   {
     title: "EPCAR",
@@ -32,9 +32,9 @@ export const infoMilitaryData = [
       {
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: EPCAR,
+        link: "https://www2.fab.mil.br/epcar/",
       },
     ],
-    link: "https://www2.fab.mil.br/epcar/",
   },
   {
     title: "ESPECEX",
@@ -42,9 +42,9 @@ export const infoMilitaryData = [
       {
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: ESPECEX,
+        link: "https://espcex.eb.mil.br/",
       },
     ],
-    link: "https://espcex.eb.mil.br/",
   },
   {
     title: "IME",
@@ -52,9 +52,9 @@ export const infoMilitaryData = [
       {
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: IME,
+        link: "http://www.ime.eb.mil.br/",
       },
     ],
-    link: "http://www.ime.eb.mil.br/",
   },
   {
     title: "ITA",
@@ -62,8 +62,8 @@ export const infoMilitaryData = [
       {
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys",
         img: ITA,
+        link: "http://www.ita.br/",
       },
     ],
-    link: "http://www.ita.br/",
   },
 ];

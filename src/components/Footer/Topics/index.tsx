@@ -12,7 +12,7 @@ export const Topics = ({children}: ITopicsProps) =>{
             paddingLeft="10px"
             fontSize="15px"
             textDecoration="none"
-            href="#"
+            href={`#${children}`}
             _hover={{
                 color: "red",
                 transition: "200ms",

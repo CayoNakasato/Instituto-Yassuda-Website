@@ -11,25 +11,33 @@ export const InfoHighlightsSection = () => {
       <Flex
         flexDirection={["column", "column", "column", "column", "row", "row"]}
         justifyContent="space-evenly"
-        alignItems="center"
+        alignItems={["center", "center","center", "center", "flex-start"]}
         padding="2rem"
       >
-        <Flex flexDirection="column" gap="2rem">
+        <Flex
+          flexDirection={["row", "row", "row", "row", "column", "column"]}
+          gap="2rem"
+        >
           <InfoHighlightsBigCard />
-          <InfoHighlightsBigCard />
+          <Flex display={["none", "none", "none", "flex", "flex", "flex"]} alignSelf={"flex-start"} >
+            <InfoHighlightsBigCard />
+          </Flex>
         </Flex>
 
         <Flex gap="1rem" flexDirection={"column"} alignItems="center">
           <Flex
             flexDirection={["row", "row", "row", "row", "column", "column"]}
             gap="2rem"
+            display={["none", "none", "none", "none", "flex", "flex"]}
           >
             <InfoHighlightsSmallCard />
             <InfoHighlightsSmallCard />
             <InfoHighlightsSmallCard />
             <InfoHighlightsSmallCard />
           </Flex>
-          <Link color="blue">Veja mais novidades...</Link>
+          <Link color="blue" marginTop={"3rem"}>
+            Veja mais novidades...
+          </Link>
         </Flex>
       </Flex>
     </Flex>

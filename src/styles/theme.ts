@@ -14,6 +14,10 @@ export const theme = extendTheme({
       ".swiper-button-next": {
         color: "red",
       },
+      ".swiper": {
+        width: "99%",
+        height: "300px",
+      }
     },
   },
 });
