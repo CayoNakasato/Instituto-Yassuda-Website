@@ -15,7 +15,7 @@ export const theme = extendTheme({
         color: "red",
       },
       ".swiper": {
-        width: "99%",
+        width: "100%",
         height: "300px",
       }
     },

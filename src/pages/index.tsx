@@ -9,17 +9,23 @@ import { MilitarySection } from "../components/MilitarySection";
 import { InfoHighlightsSection } from "../components/InfoHighlightsSection";
 
 export const HomePage = () => {
-
   return (
     <Box width="100vw">
       <Header />
-      <Flex width={["100vw"]}>
+      <Flex
+        width={["100vw"]}
+        marginTop={["1rem", "1rem", "1rem", "1rem", "1rem"]}
+      >
         <CarouselComponent />
       </Flex>
-      <InfoHighlightsSection/>
+
+      <InfoHighlightsSection />
+
       <Box>
         <GradeSection hightlight>
-          <Heading textAlign={["center"]} size="2xl">Quem somos</Heading>
+          <Heading textAlign={["center"]} size="2xl">
+            Quem somos
+          </Heading>
           <ContentSection img={ImageSchool}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sed
             neque adipisci tempora quisquam porro, at dolore quas dignissimos
@@ -40,7 +46,9 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
         <GradeSection>
-          <Heading textAlign={["center"]} size="2xl">Fundamental I</Heading>
+          <Heading textAlign={["center"]} size="2xl">
+            Fundamental I
+          </Heading>
           <ContentSection img={ImageSchool}>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -69,7 +77,9 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
         <GradeSection hightlight>
-          <Heading textAlign={["center"]} size="2xl">Fundamental II</Heading>
+          <Heading textAlign={["center"]} size="2xl">
+            Fundamental II
+          </Heading>
           <ContentSection img={ImageSchool}>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -98,7 +108,9 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
         <GradeSection>
-          <Heading textAlign={["center"]} size="2xl">Ensino Médio</Heading>
+          <Heading textAlign={["center"]} size="2xl">
+            Ensino Médio
+          </Heading>
           <ContentSection img={ImageSchool}>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -126,9 +138,11 @@ export const HomePage = () => {
             Culpa.
           </ContentSection>
         </GradeSection>
-        
+
         <GradeSection hightlight>
-          <Heading textAlign={["center"]} size="2xl">Curso Pré-Vestibular</Heading>
+          <Heading textAlign={["center"]} size="2xl">
+            Curso Pré-Vestibular
+          </Heading>
           <ContentSection img={ImageSchool}>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -158,11 +172,9 @@ export const HomePage = () => {
         </GradeSection>
       </Box>
 
-      <MilitarySection/>
+      <MilitarySection />
 
-
-      <Footer/>
+      <Footer />
     </Box>
-       
   );
 };

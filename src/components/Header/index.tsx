@@ -21,9 +21,9 @@ export const Header = () => {
       p={["2rem", "2rem", "1rem"]}
       boxShadow="0px 3px 8px 0px rgba(0,0,0,0.2)"
     >
-      <Image src={Logo} width="150px" />
+      <Image src={Logo} width="170px" marginLeft={["1rem","1rem","3rem","1rem","4rem"]} />
       <MenuToogle isOpen={isOpen} toggle={toggle} />
-      <NavLinks isOpen={isOpen} />
+      <NavLinks isOpen={isOpen}/>
     </Flex>
   );
 };

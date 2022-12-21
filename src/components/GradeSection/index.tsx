@@ -13,14 +13,13 @@ export const GradeSection = ({
   children,
   hightlight,
   noFooter,
-}: SectionProps) => { 
-  console.log(children)
+}: SectionProps) => {
   return (
     <Box
       bg={hightlight ? "#F3533E" : "white"}
       w={["100%"]}
       position="relative"
-      p={["1rem 0"]}
+      p={["3rem 0"]}
     >
       {hightlight && (
         <Image

@@ -21,6 +21,7 @@ export const NavLinks = ({ isOpen }: NavLinksProps) => {
         direction={["column", "column", "row", "row"]}
         pt={[10, 10, 10, 0]}
         paddingRight={[5]}
+        marginRight={["1rem","1rem","1rem","1rem","10rem"]}
       >
         <MenuItem to="/">Quem somos</MenuItem>
         <MenuItem to="/">Fundamental I</MenuItem>

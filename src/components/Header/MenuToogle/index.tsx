@@ -9,7 +9,11 @@ interface MenuToggleProps {
 
 export const MenuToogle = ({ toggle, isOpen }: MenuToggleProps) => {
   return (
-    <Box display={{ base: "block", md: "block", lg: "none" }} onClick={toggle}>
+    <Box
+      display={{ base: "block", md: "block", lg: "none" }}
+      onClick={toggle}
+      marginRight={["1rem", "1rem", "3rem"]}
+    >
       {isOpen ? (
         <IoMdClose size={"35px"} cursor="pointer" color="red" />
       ) : (
