@@ -47,7 +47,10 @@ export const Footer = () => {
               um futuro promissor com a educação.
             </Text>
 
-            <Divider display={["block", "block", "block", "none"]} margin="1rem" />
+            <Divider
+              display={["block", "block", "block", "none"]}
+              margin="1rem"
+            />
 
             <Flex gap="10px" flexDirection={["column"]}>
               <Flex gap="1rem" justifyContent="center" alignItems="center">
@@ -86,17 +89,17 @@ export const Footer = () => {
               <Heading fontSize="15px" fontWeight="500">
                 Páginas
               </Heading>
-              <Topics>Quem somos</Topics>
-              <Topics>Fundalmental I</Topics>
-              <Topics>Fundalmental II</Topics>
-              <Topics>Ensino Médio</Topics>
-              <Topics>Curso Pré-Vestibulares</Topics>
-              <Topics>Curso Pré-Militares</Topics>
+              <Topics to="#1">Quem somos</Topics>
+              <Topics to="#2">Fundalmental I</Topics>
+              <Topics to="#3">Fundalmental II</Topics>
+              <Topics to="#4">Ensino Médio</Topics>
+              <Topics to="#5">Curso Pré-Vestibulares</Topics>
+              <Topics to="#6">Curso Pré-Militares</Topics>
             </Flex>
 
             <Flex flexDirection={"column"}>
-              <Topics>Termos de Uso</Topics>
-              <Topics>Política de Privacidade</Topics>
+              <Topics to="#">Termos de Uso</Topics>
+              <Topics to="#">Política de Privacidade</Topics>
             </Flex>
           </Flex>
           <Flex flexDirection={["column"]} gap="1rem">

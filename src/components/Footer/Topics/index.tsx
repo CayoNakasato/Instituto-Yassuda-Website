@@ -1,24 +1,25 @@
-import { Link } from "@chakra-ui/react"
+import { Link } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
-interface ITopicsProps{
-    children: ReactNode
+interface ITopicsProps {
+  children: ReactNode;
+  to: string;
 }
 
-export const Topics = ({children}: ITopicsProps) =>{
-    return (
-        <Link
-            color="#000000"
-            paddingLeft="10px"
-            fontSize="15px"
-            textDecoration="none"
-            href={`#${children}`}
-            _hover={{
-                color: "red",
-                transition: "200ms",
-            }}
-            >
-            {children}
-          </Link>
-    )
-}
+export const Topics = ({ children, to }: ITopicsProps) => {
+  return (
+    <Link
+      color="#000000"
+      paddingLeft="10px"
+      fontSize="15px"
+      textDecoration="none"
+      _hover={{
+        color: "red",
+        transition: "200ms",
+      }}
+      href={to}
+    >
+      {children}
+    </Link>
+  );
+};
