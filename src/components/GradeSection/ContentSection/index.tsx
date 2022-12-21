@@ -16,7 +16,7 @@ export const ContentSection = ({ children, img, reverse }: ContentProps) => {
       gap={["1rem"]}
       maxW="1200px"
     >
-      <Image src={img} width={["100%"]} maxW="200px" />
+      <Image src={img} width={["100%"]} maxW="200px" marginRight={["2rem"]} />
       <Flex flexDir={["column"]} gap={["1rem"]}>
         {children}
       </Flex>
