@@ -21,16 +21,18 @@ export const NavLinks = ({ isOpen }: NavLinksProps) => {
         direction={["column", "column", "row", "row"]}
         pt={[10, 10, 10, 0]}
         paddingRight={[5]}
-        marginRight={["1rem","1rem","1rem","1rem","10rem"]}
+        marginRight={["1rem", "1rem", "1rem", "1rem", "3rem"]}
       >
-        <MenuItem to="#1">Quem somos</MenuItem>
-        <MenuItem to="#2">Fundamental I</MenuItem>
-        <MenuItem to="#3">Fundamental II</MenuItem>
-        <MenuItem to="#4">Ensino Médio</MenuItem>
-        <MenuItem to="#5">
+        <MenuItem to="#">Início</MenuItem>
+        <MenuItem to="#highlights">Novidades</MenuItem>
+        <MenuItem to="#QuemSomos">Quem somos</MenuItem>
+        <MenuItem to="#FundamentalI">Fundamental I</MenuItem>
+        <MenuItem to="#FundamentalII">Fundamental II</MenuItem>
+        <MenuItem to="#EnsinoMedio">Ensino Médio</MenuItem>
+        <MenuItem to="#CPV">
           Cursos <br></br>Pré-Vestibulares
         </MenuItem>
-        <MenuItem to="#6">
+        <MenuItem to="#CPM">
           Cursos <br></br>Pré-Militares
         </MenuItem>
       </Stack>

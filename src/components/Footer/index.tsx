@@ -89,12 +89,13 @@ export const Footer = () => {
               <Heading fontSize="15px" fontWeight="500">
                 Páginas
               </Heading>
-              <Topics to="#1">Quem somos</Topics>
-              <Topics to="#2">Fundalmental I</Topics>
-              <Topics to="#3">Fundalmental II</Topics>
-              <Topics to="#4">Ensino Médio</Topics>
-              <Topics to="#5">Curso Pré-Vestibulares</Topics>
-              <Topics to="#6">Curso Pré-Militares</Topics>
+              <Topics to="#highlights">Novidades</Topics>
+              <Topics to="#QuemSomos">Quem somos</Topics>
+              <Topics to="#FundamentalI">Fundalmental I</Topics>
+              <Topics to="#FundamentalII">Fundalmental II</Topics>
+              <Topics to="#EnsinoMedio">Ensino Médio</Topics>
+              <Topics to="#CPV">Curso Pré-Vestibulares</Topics>
+              <Topics to="#CPM">Curso Pré-Militares</Topics>
             </Flex>
 
             <Flex flexDirection={"column"}>

@@ -1,10 +1,12 @@
-import { Flex, Heading, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link } from "@chakra-ui/react";
 import { InfoHighlightsBigCard } from "../InfoHighlightBigCard";
 import { InfoHighlightsSmallCard } from "../InfoHighlightSmallCard";
 
 export const InfoHighlightsSection = () => {
   return (
     <Flex flexDirection="column" gap="2rem" padding="2rem">
+      <Box id="highlights" position="relative" top="-100"></Box>
+
       <Heading width="180px" margin="0 auto">
         Novidades
       </Heading>

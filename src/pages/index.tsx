@@ -23,7 +23,8 @@ export const HomePage = () => {
 
       <Box>
         <GradeSection hightlight>
-          <Heading id="1" textAlign={["center"]} size="2xl">
+          <Box id="QuemSomos" position="absolute" top="-100"></Box>
+          <Heading textAlign={["center"]} size="2xl">
             Quem somos
           </Heading>
           <ContentSection img={ImageSchool}>
@@ -46,7 +47,9 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
         <GradeSection>
-          <Heading id="2" textAlign={["center"]} size="2xl">
+          <Box id="FundamentalI" position="absolute" top="-100"></Box>
+
+          <Heading textAlign={["center"]} size="2xl">
             Fundamental I
           </Heading>
           <ContentSection img={ImageSchool}>
@@ -77,7 +80,9 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
         <GradeSection hightlight>
-          <Heading id="3" textAlign={["center"]} size="2xl">
+          <Box id="FundamentalII" position="absolute" top="-100"></Box>
+
+          <Heading textAlign={["center"]} size="2xl">
             Fundamental II
           </Heading>
           <ContentSection img={ImageSchool}>
@@ -108,7 +113,9 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
         <GradeSection>
-          <Heading id="4" textAlign={["center"]} size="2xl">
+          <Box id="EnsinoMedio" position="absolute" top="-100"></Box>
+
+          <Heading textAlign={["center"]} size="2xl">
             Ensino Médio
           </Heading>
           <ContentSection img={ImageSchool}>
@@ -140,7 +147,9 @@ export const HomePage = () => {
         </GradeSection>
 
         <GradeSection hightlight>
-          <Heading id="5" textAlign={["center"]} size="2xl">
+        <Box id="CPV" position="absolute" top="-100"></Box>
+
+          <Heading  textAlign={["center"]} size="2xl">
             Curso Pré-Vestibular
           </Heading>
           <ContentSection img={ImageSchool}>
