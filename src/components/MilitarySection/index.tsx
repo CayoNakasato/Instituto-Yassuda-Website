@@ -10,7 +10,7 @@ export const MilitarySection = () => {
       gap="3rem"
       minHeight="650px"
     >
-      <Heading margin={"0 auto"} size="2xl">Cursos Pré-Militares</Heading>
+      <Heading id="6" margin={"0 auto"} size="2xl">Cursos Pré-Militares</Heading>
       <Flex overflow="auto" gap="3rem">
         {infoMilitaryData.map((info, index) => {
           return (

@@ -22,7 +22,7 @@ export const CarouselComponent = () => {
           <Image
             alt=""
             src="https://crosscut.com/sites/default/files/images/articles/schoolmentalhealth_lw_hero.jpeg"
-            width={"100vw"}
+            width={"100%"}
             maxH={["40vh"]}
             objectFit={["cover"]}
           />
@@ -33,7 +33,7 @@ export const CarouselComponent = () => {
           <Image
             alt=""
             src="https://4.bp.blogspot.com/-aj_APRKaZL4/Weuz-vE3YNI/AAAAAAACxfQ/b04kntCJjwMDGJd5oPaT5EUnU2H4xw7kQCLcBGAs/s1600/IMG_9144.jpg"
-            width={"100vw"}
+            width={"100%"}
             maxH={["40vh"]}
             objectFit={["cover"]}
           />
@@ -44,7 +44,7 @@ export const CarouselComponent = () => {
           <Image
             alt=""
             src="https://4.bp.blogspot.com/-aj_APRKaZL4/Weuz-vE3YNI/AAAAAAACxfQ/b04kntCJjwMDGJd5oPaT5EUnU2H4xw7kQCLcBGAs/s1600/IMG_9144.jpg"
-            width={"100vw"}
+            width={"100%"}
             maxH={["40vh"]}
             objectFit={["cover"]}
           />
@@ -55,7 +55,7 @@ export const CarouselComponent = () => {
           <Image
             alt=""
             src="https://4.bp.blogspot.com/-aj_APRKaZL4/Weuz-vE3YNI/AAAAAAACxfQ/b04kntCJjwMDGJd5oPaT5EUnU2H4xw7kQCLcBGAs/s1600/IMG_9144.jpg"
-            width={"100vw"}
+            width={"100%"}
             maxH={["40vh"]}
             objectFit={["cover"]}
           />

@@ -16,7 +16,11 @@ export const InfoHighlightsSection = () => {
       >
         <Flex flexDirection={["row", "row", "row", "row", "column"]} gap="2rem">
           <InfoHighlightsBigCard />
-          <Flex display={["none", "none", "none", "flex"]}>
+
+          <Flex
+            width={"100%"}
+            display={["none", "none", "none", "none", "flex"]}
+          >
             <InfoHighlightsBigCard />
           </Flex>
         </Flex>
