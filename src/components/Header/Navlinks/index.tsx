@@ -21,7 +21,7 @@ export const NavLinks = ({ isOpen }: NavLinksProps) => {
       flexBasis={{ base: "100%", md: "auto" }}
     >
       <Stack
-        spacing={[4, 4, 4, 6]}
+        spacing={[4, 4, 4, 4]}
         align={["flex-start", "flex-start", "center"]}
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "column", "row", "row"]}

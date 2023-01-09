@@ -17,7 +17,12 @@ export const Header = () => {
     <Flex
       as="nav"
       align="center"
-      justify={["space-between","space-between","space-evenly",]}
+      justify={[
+        "space-between",
+        "space-between",
+        "space-between",
+        "space-evenly",
+      ]}
       wrap="wrap"
       w="100%"
       h={"100%"}
@@ -30,7 +35,12 @@ export const Header = () => {
       zIndex="10"
       bg="white"
     >
-      <Image cursor='pointer' src={Logo} width={["120px"]} onClick={() => navigate("/")} />
+      <Image
+        cursor="pointer"
+        src={Logo}
+        width={["120px"]}
+        onClick={() => navigate("/")}
+      />
       <MenuToogle isOpen={isOpen} toggle={toggle} />
       <NavLinks isOpen={isOpen} />
     </Flex>
