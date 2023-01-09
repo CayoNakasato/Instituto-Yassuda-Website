@@ -13,7 +13,7 @@ export const MilitarySection = () => {
       <Box id="CPM" position="relative" top="-100"></Box>
 
       <Heading margin={"0 auto"} size="2xl">
-        Cursos Pré-Militares
+        Curso Pré-Militares
       </Heading>
       <Flex overflow="auto" gap="3rem">
         {infoMilitaryData.map((info, index) => {
