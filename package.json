@@ -13,19 +13,26 @@
     "@chakra-ui/react": "^2.4.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@hookform/resolvers": "^2.9.10",
     "axios": "^1.2.0",
     "framer-motion": "^6",
+    "google-auth-library": "^8.7.0",
     "google-map-react": "^2.2.0",
+    "googleapis": "^110.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.5",
     "react-icons": "^4.7.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.4",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@types/node": "^18.11.18",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/yup": "^0.32.0",
     "@vitejs/plugin-react": "^2.2.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"

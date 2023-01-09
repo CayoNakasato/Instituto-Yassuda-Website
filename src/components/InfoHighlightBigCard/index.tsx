@@ -15,8 +15,8 @@ export const InfoHighlightsBigCard = ({ path }: InfoCardsProps) => {
       maxWidth="550px"
       onClick={() => navigate(path)}
     >
-      <Image width={["100%"]} height={["200px", "300px"]} src={imagem}></Image>
-      <Link width={["350px"]}>Lorem ipsum dolor sit amet consectetur.</Link>
+      <Image height={["200px", "300px"]} src={imagem}></Image>
+      <Link>Lorem ipsum dolor sit amet consectetur.</Link>
     </Flex>
   );
 };
