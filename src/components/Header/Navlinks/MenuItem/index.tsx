@@ -19,6 +19,7 @@ export const MenuItem = ({
       <Text
         display={"flex"}
         alignItems="center"
+        align={"center"}
         fontSize={["18px", "17px"]}
         gap="2"
         color={{ base: highlight ? "blue.900" : "gray.900" }}

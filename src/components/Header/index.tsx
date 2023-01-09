@@ -1,6 +1,6 @@
 import { Flex, Image } from "@chakra-ui/react";
 import { MenuToogle } from "./MenuToogle";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLinks } from "./Navlinks";
 import Logo from "../../assets/logoEscola/logo.jpg";
 

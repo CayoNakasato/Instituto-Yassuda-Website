@@ -1,13 +1,11 @@
 import { Box, Stack } from "@chakra-ui/react";
 import { MenuItem } from "./MenuItem";
-import { useNavigate } from "react-router-dom";
 
 interface NavLinksProps {
   isOpen: boolean;
 }
 
 export const NavLinks = ({ isOpen }: NavLinksProps) => {
-  const navigate = useNavigate();
 
   return (
     <Box
@@ -30,10 +28,10 @@ export const NavLinks = ({ isOpen }: NavLinksProps) => {
         <MenuItem to="#FundamentalII">Fundamental II</MenuItem>
         <MenuItem to="#EnsinoMedio">Ensino Médio</MenuItem>
         <MenuItem to="#CPV">
-          Cursos <br></br>Pré-Vestibulares
+          Curso <br></br>Pré-Vestibular
         </MenuItem>
         <MenuItem to="#CPM">
-          Cursos <br></br>Pré-Militares
+          Curso <br></br>Pré-Militar
         </MenuItem>
       </Stack>
     </Box>
