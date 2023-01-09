@@ -8,7 +8,7 @@ export const InfoHighlightsSection = () => {
       <Box id="highlights" position="relative" top="-100"></Box>
 
       <Heading width="180px" margin="0 auto">
-        Novidades
+        Notícias
       </Heading>
       <Flex
         flexDirection={["column", "column", "column", "column", "row", "row"]}
@@ -17,13 +17,13 @@ export const InfoHighlightsSection = () => {
         padding="2rem"
       >
         <Flex flexDirection={["row", "row", "row", "row", "column"]} gap="2rem">
-          <InfoHighlightsBigCard />
+          <InfoHighlightsBigCard path={"/"} />
 
           <Flex
             width={"100%"}
             display={["none", "none", "none", "none", "flex"]}
           >
-            <InfoHighlightsBigCard />
+            <InfoHighlightsBigCard path={"/"} />
           </Flex>
         </Flex>
 
@@ -33,13 +33,13 @@ export const InfoHighlightsSection = () => {
             gap="2rem"
             display={["none", "none", "none", "none", "flex", "flex"]}
           >
-            <InfoHighlightsSmallCard />
-            <InfoHighlightsSmallCard />
-            <InfoHighlightsSmallCard />
-            <InfoHighlightsSmallCard />
+            <InfoHighlightsSmallCard path={"/"} />
+            <InfoHighlightsSmallCard path={"/"} />
+            <InfoHighlightsSmallCard path={"/"} />
+            <InfoHighlightsSmallCard path={"/"} />
           </Flex>
-          <Link color="blue" marginTop={"3rem"}>
-            Veja mais novidades...
+          <Link href="/" color="blue" marginTop={"3rem"}>
+            Veja mais notícias...
           </Link>
         </Flex>
       </Flex>
