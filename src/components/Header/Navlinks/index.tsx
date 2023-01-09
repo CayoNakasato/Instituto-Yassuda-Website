@@ -8,12 +8,12 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 
+
 interface NavLinksProps {
   isOpen: boolean;
 }
 
 export const NavLinks = ({ isOpen }: NavLinksProps) => {
-  const navigate = useNavigate();
 
   return (
     <Flex
