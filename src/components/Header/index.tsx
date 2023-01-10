@@ -4,7 +4,11 @@ import { useState } from "react";
 import { NavLinks } from "./Navlinks";
 import Logo from "../../assets/logoEscola/logo.jpg";
 
-export const Header = () => {
+interface IExternal {
+  external?: boolean
+}
+
+export const Header = ({external}: IExternal) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -34,7 +38,7 @@ export const Header = () => {
         marginLeft={["1rem", "1rem", "3rem", "1rem", "4rem"]}
       />
       <MenuToogle isOpen={isOpen} toggle={toggle} />
-      <NavLinks isOpen={isOpen} />
+      <NavLinks isOpen={isOpen} external={external}/>
     </Flex>
   );
 };

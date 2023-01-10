@@ -3,9 +3,10 @@ import { MenuItem } from "./MenuItem";
 
 interface NavLinksProps {
   isOpen: boolean;
+  external?: boolean
 }
 
-export const NavLinks = ({ isOpen }: NavLinksProps) => {
+export const NavLinks = ({ isOpen, external }: NavLinksProps) => {
 
   return (
     <Box
@@ -21,16 +22,16 @@ export const NavLinks = ({ isOpen }: NavLinksProps) => {
         paddingRight={[5]}
         marginRight={["1rem", "1rem", "1rem", "1rem", "3rem"]}
       >
-        <MenuItem to="#">Início</MenuItem>
-        <MenuItem to="#highlights">Novidades</MenuItem>
-        <MenuItem to="#QuemSomos">Quem somos</MenuItem>
-        <MenuItem to="#FundamentalI">Fundamental I</MenuItem>
-        <MenuItem to="#FundamentalII">Fundamental II</MenuItem>
-        <MenuItem to="#EnsinoMedio">Ensino Médio</MenuItem>
-        <MenuItem to="#CPV">
+        <MenuItem external to="#">Início</MenuItem>
+        <MenuItem external to="#highlights">Novidades</MenuItem>
+        <MenuItem external to="#QuemSomos">Quem somos</MenuItem>
+        <MenuItem external to="#FundamentalI">Fundamental I</MenuItem>
+        <MenuItem external to="#FundamentalII">Fundamental II</MenuItem>
+        <MenuItem external to="#EnsinoMedio">Ensino Médio</MenuItem>
+        <MenuItem external to="#CPV">
           Curso <br></br>Pré-Vestibular
         </MenuItem>
-        <MenuItem to="#CPM">
+        <MenuItem external to="#CPM">
           Curso <br></br>Pré-Militar
         </MenuItem>
       </Stack>

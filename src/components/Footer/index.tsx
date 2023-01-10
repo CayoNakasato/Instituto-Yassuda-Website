@@ -96,12 +96,9 @@ export const Footer = () => {
               <Topics to="#EnsinoMedio">Ensino Médio</Topics>
               <Topics to="#CPV">Curso Pré-Vestibulares</Topics>
               <Topics to="#CPM">Curso Pré-Militares</Topics>
+              <Topics to="/privacyTerms">Política de Privacidade</Topics>
             </Flex>
 
-            <Flex flexDirection={"column"}>
-              <Topics to="#">Termos de Uso</Topics>
-              <Topics to="#">Política de Privacidade</Topics>
-            </Flex>
           </Flex>
           <Flex flexDirection={["column"]} gap="1rem">
             <Text fontWeight={"500"}>Localização</Text>

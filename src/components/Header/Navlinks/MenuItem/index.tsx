@@ -6,16 +6,18 @@ interface MenuItemProps {
   children: ReactNode;
   to: string;
   highlight?: boolean;
+  external?: boolean
 }
 
 export const MenuItem = ({
   children,
   to,
   highlight,
+  external,
   ...rest
 }: MenuItemProps) => {
   return (
-    <Link href={to} _hover={{ textDecor: "none" }}>
+    <Link href={external? `/${to}`: to} _hover={{ textDecor: "none" }}>
       <Text
         display={"flex"}
         alignItems="center"
