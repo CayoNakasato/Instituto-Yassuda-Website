@@ -10,7 +10,7 @@ interface ITopicsProps {
 export const Topics = ({ children, to, path }: ITopicsProps) => {
   return (
     <Link
-      color="#000000"
+      color="white"
       paddingLeft="10px"
       fontSize="15px"
       textDecoration="none"

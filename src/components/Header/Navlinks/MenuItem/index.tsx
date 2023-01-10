@@ -19,6 +19,7 @@ export const MenuItem = ({
   return (
     <Link href={external? `/${to}`: to} _hover={{ textDecor: "none" }}>
       <Text
+        textAlign={["left","left","center","center",]}
         display={"flex"}
         alignItems="center"
         align={"center"}

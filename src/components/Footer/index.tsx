@@ -1,5 +1,6 @@
-import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import { FaFacebook } from "react-icons/fa";
+import { AiFillInstagram, AiFillPhone } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import {
   Box,
   Divider,
@@ -11,60 +12,42 @@ import {
 } from "@chakra-ui/react";
 import Logo from "../../assets/logoEscola/logoNoBg.png";
 import { Topics } from "./Topics";
-
+import { ContactForm } from "./ContactForm";
+//#5a5a5a
 export const Footer = () => {
   return (
-    <Box
-      width="100%"
-      height="100%"
-      margin="0 auto"
-      bg={"lightgray"}
-      padding="4rem"
-    >
+    <Flex flexDir={"column"} bg={"#5a5a5a"} color="white" p={"1rem 0"} gap="1rem">
       <Flex
         flexDirection={["column", "column", "column", "row"]}
+        gap={3}
         justifyContent="space-evenly"
-        alignItems="center"
       >
-        <Flex>
-          <Flex
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Image src={Logo} maxWidth="250px" width={"100%"} />
+        <Flex id="LogoYassuda" justifyContent={"center"}>
+          <Flex flexDirection="column" alignItems="center" gap={"0.4rem"}>
+            <Image src={Logo} maxWidth="200px" />
 
-            <Text fontWeight="600">Instituto Yassuda</Text>
-
-            <Text
-              width="300px"
-              alignItems="center"
-              display={["none", "none", "none", "block"]}
-              marginBottom="1rem"
-            >
-              Escola onde você aprende a aprender, metodologia diferente e
-              eficaz. Entre em contato e venha fazer parte dessa mudança e crie
-              um futuro promissor com a educação.
+            <Text fontSize={"20px"} fontWeight="600">
+              Instituto Yassuda
             </Text>
-
-            <Divider
-              display={["block", "block", "block", "none"]}
-              margin="1rem"
-            />
 
             <Flex gap="10px" flexDirection={["column"]}>
               <Flex gap="1rem" justifyContent="center" alignItems="center">
-                <PhoneIcon />
+                <AiFillPhone size="20px" />
                 <Text fontSize={"14px"}>(67) 99999-9999</Text>
               </Flex>
 
               <Flex gap="1rem" justifyContent="center" alignItems="center">
-                <EmailIcon />
-                <Text fontSize={"14px"}>institutoYassuda@gmail.com</Text>
+                <MdEmail size="20px" />
+                <Link
+                  href="mailto: institutoYassuda@gmail.com"
+                  fontSize={"14px"}
+                >
+                  institutoYassuda@gmail.com
+                </Link>
               </Flex>
 
               <Flex gap="1rem" justifyContent="center" alignItems="center">
-                <FaFacebook />
+                <FaFacebook size="20px" />
                 <Link
                   fontSize={"14px"}
                   href="https://www.facebook.com/InstitutoYassuda/"
@@ -73,22 +56,31 @@ export const Footer = () => {
                   Instituto Yassuda
                 </Link>
               </Flex>
+              <Flex gap="1rem" justifyContent="center" alignItems="center">
+                <AiFillInstagram size="20px" />
+                <Link
+                  fontSize={"14px"}
+                  href="https://www.instagram.com/insty_instituto_yassuda/"
+                  isExternal
+                >
+                  Instituto Yassuda
+                </Link>
+              </Flex>
             </Flex>
           </Flex>
         </Flex>
-        <Divider display={["block", "block", "block", "none"]} margin="1rem" />
-
+        <Divider display={["block", "block", "block", "none"]} p="1rem 0" />
         <Flex
-          alignItems="center"
+          id="paginas"
           flexDirection={["column", "column", "row"]}
-          justifyContent="space-evenly"
-          gap={"5rem"}
+          gap={"1rem"}
         >
-          <Flex flexDirection={["column", "column", "column", "column", "row"]}>
-            <Flex flexDirection="column" textAlign="left">
-              <Heading fontSize="15px" fontWeight="500">
-                Páginas
-              </Heading>
+          <Flex
+            flexDirection={["row", "row", "column", "column", "row"]}
+            justifyContent="center"
+          >
+            <Flex flexDirection="column" gap={"0.7rem"}>
+              <Heading size={"md"}>Páginas</Heading>
               <Topics to="#highlights">Novidades</Topics>
               <Topics to="#QuemSomos">Quem somos</Topics>
               <Topics to="#FundamentalI">Fundalmental I</Topics>
@@ -98,18 +90,33 @@ export const Footer = () => {
               <Topics to="#CPM">Curso Pré-Militares</Topics>
               <Topics to="/privacyTerms">Política de Privacidade</Topics>
             </Flex>
-
-          </Flex>
-          <Flex flexDirection={["column"]} gap="1rem">
-            <Text fontWeight={"500"}>Localização</Text>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.4136974438125!2d-54.60839458444331!3d-20.44819485991355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e62906f33f47%3A0x97b5321a69785112!2sINSTY%20-%20Instituto%20Yassuda%20Col%C3%A9gio%20e%20Cursos!5e0!3m2!1spt-BR!2sbr!4v1670854335741!5m2!1spt-BR!2sbr"
-              width="350"
-              height="250"
-            ></iframe>
           </Flex>
         </Flex>
+        <Divider display={["block", "block", "block", "none"]} p="1rem 0" />
+        <Flex flexDirection="column" gap={"0.7rem"} alignItems="center">
+          <Heading size={"md"}>Políticas e Termos</Heading>
+          <Topics to="#">Termos de Uso</Topics>
+          <Topics to="#">Política de Privacidade</Topics>
+        </Flex>
       </Flex>
-    </Box>
+      <Divider width="100%" p="1rem 0" />
+      <Flex
+        flexDirection={["column", "column", "column", "row"]}
+        gap={3}
+        justifyContent="space-around"
+      >
+        <Flex flexDirection={["column"]} gap="1rem" alignItems={"center"}>
+          <Heading size={'md'} fontWeight={"500"}>Localização</Heading>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.4136974438125!2d-54.60839458444331!3d-20.44819485991355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e62906f33f47%3A0x97b5321a69785112!2sINSTY%20-%20Instituto%20Yassuda%20Col%C3%A9gio%20e%20Cursos!5e0!3m2!1spt-BR!2sbr!4v1670854335741!5m2!1spt-BR!2sbr"
+            width="450"
+            height="350"
+          ></iframe>
+          <Text>Endereço: R. São Paulo, 828 - Monte Castelo, Campo Grande - MS, 79010-050</Text>
+        </Flex>
+        <Divider display={["block", "block", "block", "none"]} p="1rem 0" />
+        <ContactForm />
+      </Flex>
+    </Flex>
   );
 };

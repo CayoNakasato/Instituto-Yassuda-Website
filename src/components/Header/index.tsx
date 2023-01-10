@@ -3,6 +3,7 @@ import { MenuToogle } from "./MenuToogle";
 import { useState } from "react";
 import { NavLinks } from "./Navlinks";
 import Logo from "../../assets/logoEscola/logo.jpg";
+import { useNavigate } from "react-router-dom";
 
 interface IExternal {
   external?: boolean
@@ -10,6 +11,7 @@ interface IExternal {
 
 export const Header = ({external}: IExternal) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -19,10 +21,16 @@ export const Header = ({external}: IExternal) => {
     <Flex
       as="nav"
       align="center"
-      justify="space-evenly"
+      justify={[
+        "space-between",
+        "space-between",
+        "space-between",
+        "space-evenly",
+      ]}
       wrap="wrap"
       w="100%"
-      p={["2rem", "2rem", "1rem"]}
+      h={"100%"}
+      p={["1rem"]}
       boxShadow="0px 3px 8px 0px rgba(0,0,0,0.2)"
       position={"sticky"}
       top="0"
@@ -32,10 +40,10 @@ export const Header = ({external}: IExternal) => {
       bg="white"
     >
       <Image
+        cursor="pointer"
         src={Logo}
-        width={["150px"]}
-        marginBottom={["1rem"]}
-        marginLeft={["1rem", "1rem", "3rem", "1rem", "4rem"]}
+        width={["120px"]}
+        onClick={() => navigate("/")}
       />
       <MenuToogle isOpen={isOpen} toggle={toggle} />
       <NavLinks isOpen={isOpen} external={external}/>

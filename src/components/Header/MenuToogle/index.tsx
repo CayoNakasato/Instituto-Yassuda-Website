@@ -15,9 +15,9 @@ export const MenuToogle = ({ toggle, isOpen }: MenuToggleProps) => {
       marginRight={["1rem", "1rem", "3rem"]}
     >
       {isOpen ? (
-        <IoMdClose size={"35px"} cursor="pointer" color="red" />
+        <IoMdClose size={"35px"} cursor="pointer" color="#B61D09" />
       ) : (
-        <GiHamburgerMenu size={"35px"} cursor="pointer" color="red" />
+        <GiHamburgerMenu size={"35px"} cursor="pointer" color="#B61D09" />
       )}
     </Box>
   );

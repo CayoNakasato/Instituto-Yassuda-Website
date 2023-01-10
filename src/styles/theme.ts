@@ -9,10 +9,10 @@ export const theme = extendTheme({
         height: "18px",
       },
       ".swiper-button-prev": {
-        color: "red",
+        color: "#B61D09",
       },
       ".swiper-button-next": {
-        color: "red",
+        color: "#B61D09",
       },
       ".swiper": {
         width: "100%",
