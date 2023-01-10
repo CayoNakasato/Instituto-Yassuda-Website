@@ -16,10 +16,11 @@ export const GradeSection = ({
 }: SectionProps) => {
   return (
     <Box
-      bg={hightlight ? "#F3533E" : "white"}
+      bg={hightlight ? "#B61D09" : "white"}
       w={["100%"]}
       position="relative"
       p={["3rem 0"]}
+      color={hightlight ? "white" : "black"}
     >
       {hightlight && (
         <Image

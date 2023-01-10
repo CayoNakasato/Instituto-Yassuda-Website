@@ -26,7 +26,7 @@ export const Header = () => {
       wrap="wrap"
       w="100%"
       h={"100%"}
-      p={["2rem", "2rem", "1rem"]}
+      p={["1rem"]}
       boxShadow="0px 3px 8px 0px rgba(0,0,0,0.2)"
       position={"sticky"}
       top="0"
