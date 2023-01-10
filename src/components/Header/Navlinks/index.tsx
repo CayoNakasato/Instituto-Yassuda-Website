@@ -11,9 +11,10 @@ import {
 
 interface NavLinksProps {
   isOpen: boolean;
+  external?: boolean
 }
 
-export const NavLinks = ({ isOpen }: NavLinksProps) => {
+export const NavLinks = ({ isOpen, external }: NavLinksProps) => {
 
   return (
     <Flex
@@ -28,15 +29,16 @@ export const NavLinks = ({ isOpen }: NavLinksProps) => {
         pt={[10, 10, 10, 0]}
         paddingRight={[5]}
       >
-        <MenuItem to="#highlights">Notícias</MenuItem>
-        <MenuItem to="#QuemSomos">Quem somos</MenuItem>
-        <MenuItem to="#FundamentalI">Fundamental I</MenuItem>
-        <MenuItem to="#FundamentalII">Fundamental II</MenuItem>
-        <MenuItem to="#EnsinoMedio">Ensino Médio</MenuItem>
-        <MenuItem to="#CPV">
+        <MenuItem external to="#">Início</MenuItem>
+        <MenuItem external to="#highlights">Novidades</MenuItem>
+        <MenuItem external to="#QuemSomos">Quem somos</MenuItem>
+        <MenuItem external to="#FundamentalI">Fundamental I</MenuItem>
+        <MenuItem external to="#FundamentalII">Fundamental II</MenuItem>
+        <MenuItem external to="#EnsinoMedio">Ensino Médio</MenuItem>
+        <MenuItem external to="#CPV">
           Curso <br></br>Pré-Vestibular
         </MenuItem>
-        <MenuItem to="#CPM">
+        <MenuItem external to="#CPM">
           Curso <br></br>Pré-Militar
         </MenuItem>
       </Stack>

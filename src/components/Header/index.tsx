@@ -5,7 +5,11 @@ import { NavLinks } from "./Navlinks";
 import Logo from "../../assets/logoEscola/logo.jpg";
 import { useNavigate } from "react-router-dom";
 
-export const Header = () => {
+interface IExternal {
+  external?: boolean
+}
+
+export const Header = ({external}: IExternal) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -42,7 +46,7 @@ export const Header = () => {
         onClick={() => navigate("/")}
       />
       <MenuToogle isOpen={isOpen} toggle={toggle} />
-      <NavLinks isOpen={isOpen} />
+      <NavLinks isOpen={isOpen} external={external}/>
     </Flex>
   );
 };

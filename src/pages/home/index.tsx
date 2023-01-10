@@ -1,12 +1,12 @@
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
-import { CarouselComponent } from "../components/Carousel";
-import { Footer } from "../components/Footer";
-import { GradeSection } from "../components/GradeSection";
-import { ContentSection } from "../components/GradeSection/ContentSection";
-import ImageSchool from "../assets/escola.jpeg";
-import { Header } from "../components/Header";
-import { MilitarySection } from "../components/MilitarySection";
-import { InfoHighlightsSection } from "../components/InfoHighlightsSection";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { CarouselComponent } from "../../components/Carousel";
+import { Footer } from "../../components/Footer";
+import { GradeSection } from "../../components/GradeSection";
+import { ContentSection } from "../../components/GradeSection/ContentSection";
+import ImageSchool from "../../assets/escola.jpeg";
+import { Header } from "../../components/Header";
+import { MilitarySection } from "../../components/MilitarySection";
+import { InfoHighlightsSection } from "../../components/InfoHighlightsSection";
 
 export const HomePage = () => {
   return (
@@ -147,9 +147,9 @@ export const HomePage = () => {
         </GradeSection>
 
         <GradeSection hightlight>
-        <Box id="CPV" position="absolute" top="-100"></Box>
+          <Box id="CPV" position="absolute" top="-100"></Box>
 
-          <Heading  textAlign={["center"]} size="2xl">
+          <Heading textAlign={["center"]} size="2xl">
             Curso Pré-Vestibular
           </Heading>
           <ContentSection img={ImageSchool}>

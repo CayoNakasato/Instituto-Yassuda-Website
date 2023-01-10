@@ -3,10 +3,11 @@ import { ReactNode } from "react";
 
 interface ITopicsProps {
   children: ReactNode;
-  to: string;
+  to?: string;
+  path?: string
 }
 
-export const Topics = ({ children, to }: ITopicsProps) => {
+export const Topics = ({ children, to, path }: ITopicsProps) => {
   return (
     <Link
       color="white"

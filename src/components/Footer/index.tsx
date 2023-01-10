@@ -88,6 +88,7 @@ export const Footer = () => {
               <Topics to="#EnsinoMedio">Ensino Médio</Topics>
               <Topics to="#CPV">Curso Pré-Vestibulares</Topics>
               <Topics to="#CPM">Curso Pré-Militares</Topics>
+              <Topics to="/privacyTerms">Política de Privacidade</Topics>
             </Flex>
           </Flex>
         </Flex>
