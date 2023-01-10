@@ -14,7 +14,7 @@ export const CardNews = () => {
   return (
     <Card
       maxW={["sm", "sm", "sm", "300px", "400px", "400px"]}
-      minW={["sm", "sm", "sm", "300px", "400x", "400px"]}
+      minW={["sm", "sm", "sm", "300px", "400px", "400px"]}
     >
       <CardBody>
         <Image
