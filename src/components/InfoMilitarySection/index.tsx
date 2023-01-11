@@ -1,26 +1,15 @@
 import {
-  Box,
   Flex,
   Image,
   Link,
   Text,
   Heading,
   Card,
-  CardBody,
 } from "@chakra-ui/react";
 import { IContentData } from "../../interfaces/InfoSection.interface";
 
 export const InfoMilitarySection = ({ content, title }: IContentData) => {
 
-  const handleClick = (title: string) =>{
-    console.log(title.toLowerCase())
-  }
-
-<<<<<<< HEAD
-=======
-  console.log(content);
-  
->>>>>>> 48dbdddbfcf58811decd981b4e84553696e89f5b
   return (
     <>
       {content.map((info, index) => {
@@ -46,10 +35,8 @@ export const InfoMilitarySection = ({ content, title }: IContentData) => {
               <Text>
                 <Link
                   paddingLeft="2rem"
-                  // href={info.link}
-                  isExternal
+                  href={`/${title}`}
                   color={"blue"}
-                  onClick={()=>handleClick(title)}
                 >
                   Saiba mais...
                 </Link>
