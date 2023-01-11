@@ -27,10 +27,15 @@ export const MilitarySection = () => {
               gap="1rem"
               maxHeight="500px"
               padding={"1rem"}
+              ml="10px"
             >
+<<<<<<< Updated upstream
               <Heading size="lg">{info.title}</Heading>
 
               <InfoMilitarySection content={info.content} />
+=======
+              <InfoMilitarySection content={info.content} title={info.title} />
+>>>>>>> Stashed changes
             </Flex>
           );
         })}

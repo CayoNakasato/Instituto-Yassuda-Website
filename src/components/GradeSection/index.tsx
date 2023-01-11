@@ -16,7 +16,7 @@ export const GradeSection = ({
 }: SectionProps) => {
   return (
     <Box
-      bg={hightlight ? "#B61D09" : "white"}
+      bg={hightlight ? "#BE0D0B" : "white"}
       w={["100%"]}
       position="relative"
       p={["3rem 0"]}
