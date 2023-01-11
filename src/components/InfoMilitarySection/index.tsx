@@ -1,7 +1,12 @@
 import { Box, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 import { IContentData } from "../../interfaces/InfoSection.interface";
 
-export const InfoMilitarySection = ({ content }: IContentData) => {
+export const InfoMilitarySection = ({ content, title }: IContentData) => {
+
+  const handleClick = (title: string) =>{
+    console.log(title.toLowerCase())
+  }
+
   return (
     <>
       {content.map((info, index) => {
@@ -27,9 +32,10 @@ export const InfoMilitarySection = ({ content }: IContentData) => {
               <Text>
                 <Link
                   paddingLeft="2rem"
-                  href={info.link}
+                  // href={info.link}
                   isExternal
                   color={"blue"}
+                  onClick={()=>handleClick(title)}
                 >
                   Saiba mais...
                 </Link>

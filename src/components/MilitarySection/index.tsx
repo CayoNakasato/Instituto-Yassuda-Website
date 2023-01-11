@@ -30,7 +30,7 @@ export const MilitarySection = () => {
             >
               <Heading size="lg">{info.title}</Heading>
 
-              <InfoMilitarySection content={info.content} />
+              <InfoMilitarySection title={info.title} content={info.content} />
             </Flex>
           );
         })}
