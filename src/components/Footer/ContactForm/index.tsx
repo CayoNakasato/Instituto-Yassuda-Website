@@ -10,14 +10,11 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
-  VStack,
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { AiOutlineUser, AiOutlineMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
-import { google } from "googleapis";
-import credentials from "../../../../credentials.json";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { ChangeEvent, useState } from "react";

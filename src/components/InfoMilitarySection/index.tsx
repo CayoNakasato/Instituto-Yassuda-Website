@@ -1,12 +1,22 @@
-import { Box, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Image,
+  Link,
+  Text,
+  Heading,
+  Card,
+  CardBody,
+} from "@chakra-ui/react";
 import { IContentData } from "../../interfaces/InfoSection.interface";
 
-export const InfoMilitarySection = ({ content }: IContentData) => {
+export const InfoMilitarySection = ({ content, title }: IContentData) => {
+  console.log(content);
   return (
     <>
       {content.map((info, index) => {
         return (
-          <Box key={index}>
+          <Card minWidth="200px" key={index} p="16px 0">
             <Flex
               gap={"1rem"}
               flexDirection="column"
@@ -15,13 +25,13 @@ export const InfoMilitarySection = ({ content }: IContentData) => {
               width="80%"
             >
               <Image
-                maxWidth="150px"
+                maxWidth="100px"
                 width={"100%"}
                 borderRadius="5px"
                 src={info.img}
                 alt="Brasão"
               />
-
+              <Heading size="lg">{title}</Heading>
               <Text size="md">{info.text}</Text>
 
               <Text>
@@ -35,7 +45,7 @@ export const InfoMilitarySection = ({ content }: IContentData) => {
                 </Link>
               </Text>
             </Flex>
-          </Box>
+          </Card>
         );
       })}
     </>

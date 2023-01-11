@@ -16,7 +16,7 @@ import { ContactForm } from "./ContactForm";
 //#5a5a5a
 export const Footer = () => {
   return (
-    <Flex flexDir={"column"} bg={"#5a5a5a"} color="white" p={"1rem 0"} gap="1rem">
+    <Flex flexDir={"column"} bg={"#F6F6F5"} color="#504444" p={"1rem 0"} gap="1rem">
       <Flex
         flexDirection={["column", "column", "column", "row"]}
         gap={3}
@@ -112,7 +112,6 @@ export const Footer = () => {
             width="450"
             height="350"
           ></iframe>
-          <Text>Endereço: R. São Paulo, 828 - Monte Castelo, Campo Grande - MS, 79010-050</Text>
         </Flex>
         <Divider display={["block", "block", "block", "none"]} p="1rem 0" />
         <ContactForm />
