@@ -2,6 +2,7 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram, AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import {
+  Box,
   Divider,
   Flex,
   Heading,
@@ -17,13 +18,13 @@ export const Footer = () => {
   return (
     <Flex
       flexDir={"column"}
-      bg={"#5a5a5a"}
-      color="white"
+      bg={"#F6F6F5"}
+      color="#504444"
       p={"5rem 0"}
       gap="1rem"
     >
       <Flex
-        flexDirection={["column", "column", "column", "row"]}
+        flexDirection={["column", "column", "column", "column","column", "row"]}
         gap={3}
         justifyContent="space-evenly"
       >
@@ -74,11 +75,15 @@ export const Footer = () => {
             </Flex>
           </Flex>
         </Flex>
-        <Divider display={["block", "block", "block", "none"]} p="1rem 0" />
+        <Divider
+          display={["block", "block", "block", "block","block", "none"]}
+          p="1rem 0"
+        />
         <Flex
           id="paginas"
           flexDirection={["column", "column", "row"]}
           gap={"1rem"}
+          alignSelf="center"
         >
           <Flex
             flexDirection={["row", "row", "column", "column", "row"]}
@@ -97,21 +102,31 @@ export const Footer = () => {
             </Flex>
           </Flex>
         </Flex>
-        <Divider display={["block", "block", "block", "none"]} p="1rem 0" />
-          <Flex flexDirection={["column"]} gap="1rem" alignItems={"center"}>
-            <Heading size={"md"} fontWeight={"500"}>
-              Localização
-            </Heading>
+        <Divider display={["block", "block", "block","block","block", "none"]} p="1rem 0" />
+
+        <ContactForm />
+
+        <Divider display={["block", "block", "block","block","block", "none"]} p="1rem 0" />
+        <Flex flexDirection={["column"]} gap="1rem" alignItems={"center"}>
+          <Heading size={"md"} fontWeight={"500"}>
+            Localização
+          </Heading>
+          <Box display={["none", "none", "none", "none", "flex"]}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.4136974438125!2d-54.60839458444331!3d-20.44819485991355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e62906f33f47%3A0x97b5321a69785112!2sINSTY%20-%20Instituto%20Yassuda%20Col%C3%A9gio%20e%20Cursos!5e0!3m2!1spt-BR!2sbr!4v1670854335741!5m2!1spt-BR!2sbr"
-              width="450"
+              max-width="450"
               height="350"
             ></iframe>
-            <Text>R. São Paulo, 828 - Monte Castelo, Campo Grande - MS, 79010-050</Text>
-          </Flex>
-          <Divider display={["block", "block", "block", "none"]} p="1rem 0" />
-          <ContactForm />
+          </Box>
+          <Link
+            isExternal
+            href="https://www.google.com/maps/place/INSTY+-+Instituto+Yassuda+Col%C3%A9gio+e+Cursos/@-20.4481999,-54.6062059,15z/data=!4m2!3m1!1s0x0:0x97b5321a69785112"
+          >
+            {" "}
+            R. São Paulo, 828 - Monte Castelo, Campo Grande - MS, 79010-050{" "}
+          </Link>
+        </Flex>
       </Flex>
     </Flex>
-  )
-}
+  );
+};

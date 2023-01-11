@@ -61,8 +61,8 @@ export const ContactForm = () => {
       flexDir="column"
       gap={"1rem"}
       w={["90%", "90%", "90%", "100%"]}
-      margin={["0 auto", "0 auto", "0 auto", "0"]}
-      maxWidth={"600px"}
+      margin={["0 auto", "0 auto", "0 auto", "0 auto", "0 auto", "0"]}
+      maxWidth={"500px"}
     >
       <Heading textAlign={"center"} size="md">
         Trabalhe Conosco
@@ -121,7 +121,7 @@ export const ContactForm = () => {
             {!!errors.email ? (
               <FormErrorMessage>{errors.email?.message}</FormErrorMessage>
             ) : (
-              <FormHelperText color="white">email@email.com</FormHelperText>
+              <FormHelperText color="black">email@email.com</FormHelperText>
             )}
           </FormControl>
         </Flex>
@@ -179,7 +179,7 @@ export const ContactForm = () => {
           </FormControl>
         </Flex>
       </Flex>
-      <Button width={"100%"} color={"black"} bg={"lightsalmon"} type="submit">
+      <Button marginLeft={"auto"} width={["100%","100%","100%","100%","100%","50%"]} color={"black"} bg={"lightsalmon"} type="submit">
         Enviar
       </Button>
     </Flex>
