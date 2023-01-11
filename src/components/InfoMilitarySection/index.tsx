@@ -29,7 +29,7 @@ export const InfoMilitarySection = ({ content, title }: IContentData) => {
                 src={info.img}
                 alt="Brasão"
               />
-              <Heading size="lg">{title}</Heading>
+              <Heading >{title}</Heading>
               <Text size="md">{info.text}</Text>
 
               <Text>

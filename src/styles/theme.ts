@@ -1,6 +1,15 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
+  components:{
+    Heading: {
+      fontSize: "30px",
+      fontFamily: `'Montserrat', sans-serif`,
+    },
+    Text: {
+      fontSize: "17px"
+    }
+  },
   styles: {
     global: {
       ".swiper-pagination-bullet": {
@@ -19,5 +28,8 @@ export const theme = extendTheme({
         height: "300px",
       },
     },
+  },
+  fonts: {
+    body: `'Roboto', sans-serif`,
   },
 });

@@ -16,7 +16,7 @@ export const CardArchive = () => {
           maxH={"80px"}
         />
         <CardBody>
-          <Heading size="sm">Titulo</Heading>
+          <Heading>Titulo</Heading>
           <Text noOfLines={1}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
             dolores ab nesciunt eveniet ipsum, voluptates incidunt soluta ipsa

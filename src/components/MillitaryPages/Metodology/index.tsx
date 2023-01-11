@@ -4,7 +4,7 @@ import exemplo from "../../../assets/escola.jpeg";
 export const Metodoloy = () => {
   return (
     <>
-      <Heading>Nossa Metodologia</Heading>
+      <Heading >Nossa Metodologia</Heading>
       <Divider />
       <Flex gap={"3rem"}>
         <Image src={exemplo} />

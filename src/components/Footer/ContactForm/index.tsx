@@ -64,7 +64,7 @@ export const ContactForm = () => {
       margin={["0 auto", "0 auto", "0 auto", "0 auto", "0 auto", "0"]}
       maxWidth={"500px"}
     >
-      <Heading textAlign={"center"} size="md">
+      <Heading textAlign={"center"}>
         Trabalhe Conosco
       </Heading>
       <Flex gap="2rem">

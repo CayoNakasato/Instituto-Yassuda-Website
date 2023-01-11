@@ -90,7 +90,7 @@ export const Footer = () => {
             justifyContent="center"
           >
             <Flex flexDirection="column" gap={"0.7rem"}>
-              <Heading size={"md"}>Páginas</Heading>
+              <Heading>Páginas</Heading>
               <Topics to="#highlights">Novidades</Topics>
               <Topics to="#QuemSomos">Quem somos</Topics>
               <Topics to="#FundamentalI">Fundalmental I</Topics>
@@ -108,7 +108,7 @@ export const Footer = () => {
 
         <Divider display={["block", "block", "block","block","block", "none"]} p="1rem 0" />
         <Flex flexDirection={["column"]} gap="1rem" alignItems={"center"}>
-          <Heading size={"md"} fontWeight={"500"}>
+          <Heading fontWeight={"500"}>
             Localização
           </Heading>
           <Box display={["none", "none", "none", "none", "flex"]}>

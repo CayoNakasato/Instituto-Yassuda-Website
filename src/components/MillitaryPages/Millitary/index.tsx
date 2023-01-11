@@ -39,7 +39,7 @@ export const Millitary = () => {
           <Text >{militarInfo.text}</Text>
         </Flex>
         <Flex padding="2rem"  borderRadius={"5px"}  gap="2rem" flexDir={"column"}>
-          <Heading>Sobre</Heading>
+          <Heading >Sobre</Heading>
           <Flex flexDir={"column"} gap={"2rem"} paddingLeft="1rem">
             <Text>{militarInfo.description1}</Text>
             <Text>{militarInfo.description2}</Text>
