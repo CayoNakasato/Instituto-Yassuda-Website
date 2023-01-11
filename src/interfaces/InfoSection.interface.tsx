@@ -4,4 +4,5 @@ export interface IContentData {
     img: string;
     link: string;
   }[];
+  title: string;
 }

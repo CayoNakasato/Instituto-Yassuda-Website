@@ -10,9 +10,6 @@ import {
 } from "@chakra-ui/react";
 import { IContentData } from "../../interfaces/InfoSection.interface";
 
-<<<<<<< Updated upstream
-export const InfoMilitarySection = ({ content }: IContentData) => {
-=======
 export const InfoMilitarySection = ({ content, title }: IContentData) => {
 
   const handleClick = (title: string) =>{
@@ -20,7 +17,7 @@ export const InfoMilitarySection = ({ content, title }: IContentData) => {
   }
 
   console.log(content);
->>>>>>> Stashed changes
+  
   return (
     <>
       {content.map((info, index) => {
