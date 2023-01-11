@@ -1,12 +1,30 @@
-import { Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Image,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr,
+} from "@chakra-ui/react";
 import Logo from "../../assets/logoEscola/logoNoBg.png";
 
 export const UseTerms = () => {
   return (
-    <div>
-      <Image src={Logo} />
+    <Flex
+      flexDir={"column"}
+      align="center"
+      gap={"1rem"}
+      p="1rem"
+      textAlign="left"
+    >
+      <Image src={Logo} maxW="400px" mb={"2rem"} />
       <Heading>POLÍTICA DE PRIVACIDADE</Heading>
-      <Heading as="h2" size={"xl"}>
+      <Heading as="h2" size={"lg"}>
         1.Sobre nossa política de privacidade
       </Heading>
       <Text>
@@ -21,7 +39,9 @@ export const UseTerms = () => {
         proteção de dados pessoais. A versão atualizada da Política de
         Privacidade será automaticamente disponibilizada nesta página.
       </Text>
-      <h2>2. Definições</h2>
+      <Heading as="h2" size="lg">
+        2. Definições
+      </Heading>
       <Text>
         "Serviços" significa todos os serviços online oferecidos a você quando
         acessa ou usa nossa Plataforma. "Plataforma" refere-se ao nosso site.
@@ -33,7 +53,8 @@ export const UseTerms = () => {
         comprometem a proteger sua privacidade e garantem o cumprimento da
         legislação de proteção de dados pessoais, mais especificamente, o
         Regulamento Geral de Proteção de Dados ("RGPD").
-        <br />
+      </Text>
+      <Text>
         Seus dados pessoais serão tratados de forma lícita, leal e transparente,
         de acordo com as finalidades determinadas explícitas e legítimas e,
         unicamente, se forem adequados, pertinentes e limitados ao necessário em
@@ -41,7 +62,8 @@ export const UseTerms = () => {
         exatos e atualizados, conservando-os para que seja possível
         identificá-lo apenas durante o período de tempo necessário para cumprir
         as finalidades do tratamento.
-        <br />
+      </Text>
+      <Text>
         O Instituto Yassuda implementou as medidas técnicas e organizacionais
         necessárias para proteger seus dados contra perdas acidentais ou
         alterações, acesso, uso ou divulgação não autorizados, tendo também
@@ -50,85 +72,93 @@ export const UseTerms = () => {
         Yassuda, temos permissão de utilizar imagens de imagem, assim como foi
         autorizado, no termo de autorização de imagem ao se matricular na
         escola.
-        <br />
-        Mediante a presente política de privacidade, informamos sobre a forma em
-        que será realizado o tratamento de seus dados pessoais por ocasião de
-        sua participação em um evento do Instituto Yassuda. Caso a política de
-        privacidade seja atualizada, você será comunicado por meio deste
-        Website.
+        <Text>
+          Mediante a presente política de privacidade, informamos sobre a forma
+          em que será realizado o tratamento de seus dados pessoais por ocasião
+          de sua participação em um evento do Instituto Yassuda. Caso a política
+          de privacidade seja atualizada, você será comunicado por meio deste
+          Website.
+        </Text>
       </Text>
 
-      <h2>3. Como entrar em contato conosco?</h2>
+      <Heading as="h2" size="lg">
+        3. Como entrar em contato conosco?
+      </Heading>
       <Text>
         Você pode entrar em contato conosco pelo e-mail
         cayonakasato112@gmail.com
       </Text>
-      <h2>4. Que tipo de informação pessoal nós processamos sobre você? </h2>
+      <Heading as="h2" size="lg">
+        4. Que tipo de informação pessoal nós processamos sobre você?{" "}
+      </Heading>
       <Text>Nós processamos diferentes tipos de informações pessoais:</Text>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              Informações pessoais que você deve fornecer: Dependendo do uso de
-              nossos serviços, precisaremos que você nos forneça algumas
-              informações pessoais.
-            </td>
-            <td>
-              Informações sobre a conta (e-mail, endereço, nome de usuário,
-              senha)
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Informações pessoais que você pode fornecer: Ao usar nossos
-              Serviços, você pode fornecer algumas Informações Pessoais
-              adicionais.
-            </td>
-            <td>
-              Informações adicionais (nome, sobrenome, sua descrição)Sua
-              atividade (suas promoções, discussões, comentários, tópicos
-              salvos, curtidas, alertas de desejos, filtros ativos, pesquisas,
-              )Suas respostas às nossas pesquisas (endereço de email e dados
-              comportamentais)
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Informações pessoais que coletamos automaticamente: Coletamos
-              também determinadas categorias de informações pessoais quando você
-              visita nossa Plataforma e usa nossos Serviços.
-            </td>
-            <td>
-              Suas tendências (estatísticas )Dados comportamentais (páginas
-              visualizadas, cliques, duração dos dados,filtros ativos,
-              pesquisas)Dados de registro e informações do dispositivo (hora,
-              data, endereço IP)
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Informações pessoais que coletamos de um parceiro de negócios (com
-              o seu consentimento): quando você concorda (por exemplo, quando
-              aceita cookies de terceiros em nossa plataforma ou no site de
-              terceiros), também coletamos determinadas informações pessoais de
-              parceiros de negócios (comerciantes, anunciantes, revendedores).
-            </td>
-            <td>
-              Informações da conta (endereço de email, nome de usuário)Seu
-              numero de telefone Dados do pedido Suas respostas às nossas
-              pesquisas (endereço de email e dados comportamentais)Dados
-              comportamentais (página visualizada, tempo na plataforma, cliques,
-              interações com a plataforma ...)Dados de registro e informações do
-              dispositivo (hora, data, endereço IP anônimo, localização
-              geográfica, informações do navegador, tamanho da tela, sistema
-              operacional, ID do dispositivo)
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>
+      <TableContainer whiteSpace="pre-wrap">
+        <Table size="sm">
+          <Thead>
+            <Tr>
+              <Td>
+                Informações pessoais que você deve fornecer: Dependendo do uso
+                de nossos serviços, precisaremos que você nos forneça algumas
+                informações pessoais.
+              </Td>
+              <Td>
+                Informações sobre a conta (e-mail, endereço, nome de usuário,
+                senha)
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>
+                Informações pessoais que você pode fornecer: Ao usar nossos
+                Serviços, você pode fornecer algumas Informações Pessoais
+                adicionais.
+              </Td>
+              <Td>
+                Informações adicionais (nome, sobrenome, sua descrição)Sua
+                atividade (suas promoções, discussões, comentários, tópicos
+                salvos, curtidas, alertas de desejos, filtros ativos, pesquisas,
+                )Suas respostas às nossas pesquisas (endereço de email e dados
+                comportamentais)
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>
+                Informações pessoais que coletamos automaticamente: Coletamos
+                também determinadas categorias de informações pessoais quando
+                você visita nossa Plataforma e usa nossos Serviços.
+              </Td>
+              <Td>
+                Suas tendências (estatísticas )Dados comportamentais (páginas
+                visualizadas, cliques, duração dos dados,filtros ativos,
+                pesquisas)Dados de registro e informações do dispositivo (hora,
+                data, endereço IP)
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>
+                Informações pessoais que coletamos de um parceiro de negócios
+                (com o seu consentimento): quando você concorda (por exemplo,
+                quando aceita cookies de terceiros em nossa plataforma ou no
+                site de terceiros), também coletamos determinadas informações
+                pessoais de parceiros de negócios (comerciantes, anunciantes,
+                revendedores).
+              </Td>
+              <Td>
+                Informações da conta (endereço de email, nome de usuário)Seu
+                numero de telefone Dados do pedido Suas respostas às nossas
+                pesquisas (endereço de email e dados comportamentais)Dados
+                comportamentais (página visualizada, tempo na plataforma,
+                cliques, interações com a plataforma ...)Dados de registro e
+                informações do dispositivo (hora, data, endereço IP anônimo,
+                localização geográfica, informações do navegador, tamanho da
+                tela, sistema operacional, ID do dispositivo)
+              </Td>
+            </Tr>
+          </Thead>
+        </Table>
+      </TableContainer>
+      <Heading as="h2" size="lg">
         5. Por que é necessário o fornecimento de algumas informações pessoais?
-      </h2>
+      </Heading>
       <Text>
         Às vezes, requisitamos que você nos forneça algumas de suas informações
         pessoais. Solicitamos apenas quando é necessário para a prestação de
@@ -138,7 +168,9 @@ export const UseTerms = () => {
         informaçoes obrigatórias, poderá ter consequências: Não poderemos criar
         sua conta; Não poderemos fornecer nossos serviços a você e etc.
       </Text>
-      <h2>6. Por que e para que usamos suas informações pessoais?</h2>
+      <Heading as="h2" size="lg">
+        6. Por que e para que usamos suas informações pessoais?
+      </Heading>
       <Text>
         Precisamos usar suas informações pessoais para vários fins, porque temos
         uma base legal para fazê-lo, que pode ser:
@@ -166,85 +198,92 @@ export const UseTerms = () => {
         da plataforma, onde POSSÍVEL. Coletamos, processamos e usamos as
         Informações Pessoais mostradas acima para os seguintes fins:
       </Text>
-      <table>
-        <tbody>
-          <tr>
-            <td>Propósito:</td>
-            <td>Base Legal</td>
-            <td>(Categorias das) Informações Pessoais</td>
-          </tr>
-          <tr>
-            <td>Para se inscrever e fazer login em nossa plataforma</td>
-            <td>Necessidade contratual</td>
-            <td>Informações da conta</td>
-          </tr>
-          <tr>
-            <td>Para fornecer nossos serviços</td>
-            <td>Necessidade contratual</td>
-            <td>Informações da conta, Informações AdicionaisSuas Atividades</td>
-          </tr>
-          <tr>
-            <td>Para permitir que você personalize seu perfil de usuário</td>
-            <td>Consentimento</td>
-            <td>Informações da conta</td>
-          </tr>
-          <tr>
-            <td>
-              Para enviar mensagens do suporte, atualizações, alertas de
-              segurança e notificações de conta.
-            </td>
-            <td>Necessidade contratual</td>
-            <td>Informações da conta</td>
-          </tr>
-          <tr>
-            <td>Para notificar sobre alterações em nossos serviços</td>
-            <td>Necessidade contratualCumprimento da lei</td>
-            <td>Informações da conta</td>
-          </tr>
-          <tr>
-            <td>
-              Para prevenir e detectar fraudes, melhorar a segurança de nossos
-              serviços
-            </td>
-            <td>Interesse legítimo e cumprimento da lei</td>
-            <td>
-              Registro de dados e informação do dispositivo, Suas Atividades
-            </td>
-          </tr>
-          <tr>
-            <td>Para manter um registro das ações</td>
-            <td>Interesse legítimo</td>
-            <td>
-              Registro de dados e informação do dispositivo, Informação da Conta
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Administrar nossa plataforma e operações internas, incluindo
-              pesquisas, solução de problemas e testes de bugs, análise de
-              dados, pesquisa e análise para desenvolvimento de produtos.
-            </td>
-            <td>Interesse legítimo</td>
-            <td>
-              Informações da conta, informações adicionais, suas atividades,
-              registro de dados e informações do dispositivo
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Para melhorar nossa plataforma, serviços, experiências, marketing,
-              relacionamento com clientes, para fornecer respostas às suas
-              perguntas.
-            </td>
-            <td>Interesse Legítimo</td>
-            <td>
-              Informações da conta, informações adicionais, suas atividades,
-              registro de dados e informações do dispositivo
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>7. Por quanto tempo mantemos suas informações pessoais?</h2>
+      <TableContainer whiteSpace="pre-wrap">
+        <Table size="sm">
+          <Tbody>
+            <Tr>
+              <Td>Propósito:</Td>
+              <Td>Base Legal</Td>
+              <Td>(Categorias das) Informações Pessoais</Td>
+            </Tr>
+            <Tr>
+              <Td>Para se inscrever e fazer login em nossa plataforma</Td>
+              <Td>Necessidade contratual</Td>
+              <Td>Informações da conta</Td>
+            </Tr>
+            <Tr>
+              <Td>Para fornecer nossos serviços</Td>
+              <Td>Necessidade contratual</Td>
+              <Td>
+                Informações da conta, Informações AdicionaisSuas Atividades
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>Para permitir que você personalize seu perfil de usuário</Td>
+              <Td>Consentimento</Td>
+              <Td>Informações da conta</Td>
+            </Tr>
+            <Tr>
+              <Td>
+                Para enviar mensagens do suporte, atualizações, alertas de
+                segurança e notificações de conta.
+              </Td>
+              <Td>Necessidade contratual</Td>
+              <Td>Informações da conta</Td>
+            </Tr>
+            <Tr>
+              <Td>Para notificar sobre alterações em nossos serviços</Td>
+              <Td>Necessidade contratualCumprimento da lei</Td>
+              <Td>Informações da conta</Td>
+            </Tr>
+            <Tr>
+              <Td>
+                Para prevenir e detectar fraudes, melhorar a segurança de nossos
+                serviços
+              </Td>
+              <Td>Interesse legítimo e cumprimento da lei</Td>
+              <Td>
+                Registro de dados e informação do dispositivo, Suas Atividades
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>Para manter um registro das ações</Td>
+              <Td>Interesse legítimo</Td>
+              <Td>
+                Registro de dados e informação do dispositivo, Informação da
+                Conta
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>
+                Administrar nossa plataforma e operações internas, incluindo
+                pesquisas, solução de problemas e testes de bugs, análise de
+                dados, pesquisa e análise para desenvolvimento de produtos.
+              </Td>
+              <Td>Interesse legítimo</Td>
+              <Td>
+                Informações da conta, informações adicionais, suas atividades,
+                registro de dados e informações do dispositivo
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>
+                Para melhorar nossa plataforma, serviços, experiências,
+                marketing, relacionamento com clientes, para fornecer respostas
+                às suas perguntas.
+              </Td>
+              <Td>Interesse Legítimo</Td>
+              <Td>
+                Informações da conta, informações adicionais, suas atividades,
+                registro de dados e informações do dispositivo
+              </Td>
+            </Tr>
+          </Tbody>
+        </Table>
+      </TableContainer>
+      <Heading as="h2" size="lg">
+        7. Por quanto tempo mantemos suas informações pessoais?
+      </Heading>
       <Text>
         Mantemos suas Informações Pessoais pelo tempo necessário para a
         finalidade para a qual as obtivemos, especialmente desde que você
@@ -265,7 +304,9 @@ export const UseTerms = () => {
         esteja conectado à nossa Plataforma e por até 13 meses em outras
         instâncias.
       </Text>
-      <h2>8. Quem recebe as suas informações pessoais?</h2>
+      <Heading as="h2" size="lg">
+        8. Quem recebe as suas informações pessoais?
+      </Heading>
       <Text>
         Nós não vendemos dados pessoais a terceiros. Compartilhamos suas
         informações pessoais com nossas empresas parceiras por interesse
@@ -295,46 +336,50 @@ export const UseTerms = () => {
         aprovado; Cláusulas contratuais autorizadas por uma supervisão
         competente.
       </Text>
-      <h2>9. Quais são seus direitos?</h2>
+      <Heading as="h2" size="lg">
+        9. Quais são seus direitos?
+      </Heading>
       <Text>
         Você tem vários direitos referentes às suas informações pessoais:
       </Text>
-      <table>
-        <tbody>
-          <tr>
-            <td>Direito de acesso:</td>
-            <td>
-              Você tem o direito de acessar suas informações pessoais fazendo
-              uma solicitação por escrito para nós. Isso significa que você tem
-              o direito de obter uma cópia de suas informações pessoais.
-            </td>
-          </tr>
-          <tr>
-            <td>Direito à retificação</td>
-            <td>
-              Você tem o direito de retificar ou completar suas informações
-              pessoais, caso sejam imprecisas ou incompletas.
-            </td>
-          </tr>
-          <tr>
-            <td>Direito de Apagar:</td>
-            <td>
-              Você tem o direito de solicitar o apagamento de suas informações
-              pessoais. Observe que esse direito não é absoluto e se aplica
-              apenas em determinadas circunstâncias (por exemplo, apenas se as
-              informações pessoais não forem mais necessárias para os fins que
-              originalmente coletamos ou processamos para elas, etc.).
-            </td>
-          </tr>
-          <tr>
-            <td>Direito de apresentar uma reclamação</td>
-            <td>
-              Você tem o direito de apresentar uma reclamação perante a
-              jurisdição relevante.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <TableContainer whiteSpace="pre-wrap">
+        <Table size="sm" variant="simple">
+          <Tbody>
+            <Tr>
+              <Td>Direito de acesso:</Td>
+              <Td>
+                Você tem o direito de acessar suas informações pessoais fazendo
+                uma solicitação por escrito para nós. Isso significa que você
+                tem o direito de obter uma cópia de suas informações pessoais.
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>Direito à retificação</Td>
+              <Td>
+                Você tem o direito de retificar ou completar suas informações
+                pessoais, caso sejam imprecisas ou incompletas.
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>Direito de Apagar:</Td>
+              <Td>
+                Você tem o direito de solicitar o apagamento de suas informações
+                pessoais. Observe que esse direito não é absoluto e se aplica
+                apenas em determinadas circunstâncias (por exemplo, apenas se as
+                informações pessoais não forem mais necessárias para os fins que
+                originalmente coletamos ou processamos para elas, etc.).
+              </Td>
+            </Tr>
+            <Tr>
+              <Td>Direito de apresentar uma reclamação</Td>
+              <Td>
+                Você tem o direito de apresentar uma reclamação perante a
+                jurisdição relevante.
+              </Td>
+            </Tr>
+          </Tbody>
+        </Table>
+      </TableContainer>
       <Text>
         Para exercer seus outros direitos, entre em contato conosco usando as
         informações de contato no início desta Política de Privacidade. Talvez
@@ -344,6 +389,6 @@ export const UseTerms = () => {
         Proteção de Dados podem se aplicar somente em certas circunstâncias ou
         depender da base legal do processamento: nós então o informaremos.
       </Text>
-    </div>
+    </Flex>
   );
 };
