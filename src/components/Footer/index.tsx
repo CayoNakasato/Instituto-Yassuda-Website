@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram, AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
@@ -117,5 +118,31 @@ export const Footer = () => {
         <ContactForm />
       </Flex>
     </Flex>
+=======
+import { Link } from "@chakra-ui/react";
+import { ReactNode } from "react";
+
+interface ITopicsProps {
+  children: ReactNode;
+  to?: string;
+  path?: string
+}
+
+export const Topics = ({ children, to, path }: ITopicsProps) => {
+  return (
+    <Link
+      color="#504444"
+      paddingLeft="10px"
+      fontSize="15px"
+      textDecoration="none"
+      _hover={{
+        color: "red",
+        transition: "200ms",
+      }}
+      href={to}
+    >
+      {children}
+    </Link>
+>>>>>>> Stashed changes
   );
 };

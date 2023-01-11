@@ -11,7 +11,13 @@ import {
 import { IContentData } from "../../interfaces/InfoSection.interface";
 
 export const InfoMilitarySection = ({ content, title }: IContentData) => {
+
+  const handleClick = (title: string) =>{
+    console.log(title.toLowerCase())
+  }
+
   console.log(content);
+  
   return (
     <>
       {content.map((info, index) => {
