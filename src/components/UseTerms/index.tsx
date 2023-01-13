@@ -24,7 +24,7 @@ export const UseTerms = () => {
     >
       <Image src={Logo} maxW="400px" mb={"2rem"} />
       <Heading>POLÍTICA DE PRIVACIDADE</Heading>
-      <Heading as="h2" size={"lg"}>
+      <Heading as="h2">
         1.Sobre nossa política de privacidade
       </Heading>
       <Text>
@@ -39,7 +39,7 @@ export const UseTerms = () => {
         proteção de dados pessoais. A versão atualizada da Política de
         Privacidade será automaticamente disponibilizada nesta página.
       </Text>
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         2. Definições
       </Heading>
       <Text>
@@ -81,14 +81,14 @@ export const UseTerms = () => {
         </Text>
       </Text>
 
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         3. Como entrar em contato conosco?
       </Heading>
       <Text>
         Você pode entrar em contato conosco pelo e-mail
         cayonakasato112@gmail.com
       </Text>
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         4. Que tipo de informação pessoal nós processamos sobre você?{" "}
       </Heading>
       <Text>Nós processamos diferentes tipos de informações pessoais:</Text>
@@ -156,7 +156,7 @@ export const UseTerms = () => {
           </Thead>
         </Table>
       </TableContainer>
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         5. Por que é necessário o fornecimento de algumas informações pessoais?
       </Heading>
       <Text>
@@ -168,7 +168,7 @@ export const UseTerms = () => {
         informaçoes obrigatórias, poderá ter consequências: Não poderemos criar
         sua conta; Não poderemos fornecer nossos serviços a você e etc.
       </Text>
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         6. Por que e para que usamos suas informações pessoais?
       </Heading>
       <Text>
@@ -281,7 +281,7 @@ export const UseTerms = () => {
           </Tbody>
         </Table>
       </TableContainer>
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         7. Por quanto tempo mantemos suas informações pessoais?
       </Heading>
       <Text>
@@ -304,7 +304,7 @@ export const UseTerms = () => {
         esteja conectado à nossa Plataforma e por até 13 meses em outras
         instâncias.
       </Text>
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         8. Quem recebe as suas informações pessoais?
       </Heading>
       <Text>
@@ -336,7 +336,7 @@ export const UseTerms = () => {
         aprovado; Cláusulas contratuais autorizadas por uma supervisão
         competente.
       </Text>
-      <Heading as="h2" size="lg">
+      <Heading as="h2">
         9. Quais são seus direitos?
       </Heading>
       <Text>

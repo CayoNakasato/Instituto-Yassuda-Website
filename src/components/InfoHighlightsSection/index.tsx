@@ -5,7 +5,7 @@ import { InfoHighlightsSmallCard } from "../InfoHighlightSmallCard";
 export const InfoHighlightsSection = () => {
   return (
     <Flex flexDirection="column" gap="2rem" padding="2rem">
-      <Heading width="180px" margin="0 auto">
+      <Heading margin="0 auto">
         Notícias
       </Heading>
       <Divider />

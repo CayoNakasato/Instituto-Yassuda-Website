@@ -14,7 +14,7 @@ export const News = () => {
   return (
     <Box width="100%" p="1rem">
       <Flex flexDir={"column"}>
-        <Heading size={"md"}>Latest</Heading>
+        <Heading>Latest</Heading>
         <Divider mt="0.25rem" />
         <Flex
           p="1rem"
@@ -43,7 +43,7 @@ export const News = () => {
         width={"100%"}
       >
         <Flex flexDir="column" width={["100%", "100%", "100%", "70%"]}>
-          <Heading mb="0.25rem" size={"md"}>
+          <Heading mb="0.25rem">
             Antigas
           </Heading>
           <Divider />
@@ -60,7 +60,7 @@ export const News = () => {
           </Flex>
         </Flex>
         <Flex flexDir={"column"} maxW={["100%", "100%", "100%", "300px"]}>
-          <Heading mb="0.25rem" size={"md"}>
+          <Heading mb="0.25rem">
             Arquivos
           </Heading>
           <Divider />

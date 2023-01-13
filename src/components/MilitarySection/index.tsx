@@ -12,7 +12,7 @@ export const MilitarySection = () => {
     >
       <Box id="CPM" position="relative" top="-100"></Box>
 
-      <Heading margin={"0 auto"} size="2xl">
+      <Heading margin={"0 auto"}>
         Curso Pré-Militares
       </Heading>
       <Flex overflow="auto" gap="3rem">
@@ -29,7 +29,7 @@ export const MilitarySection = () => {
               padding={"1rem"}
               ml="10px"
             >
-              <InfoMilitarySection content={info.content} title={info.title} />
+              <InfoMilitarySection title={info.title} content={info.content} />
             </Flex>
           );
         })}
