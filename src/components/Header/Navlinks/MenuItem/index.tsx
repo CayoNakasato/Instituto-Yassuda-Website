@@ -6,7 +6,8 @@ interface MenuItemProps {
   children: ReactNode;
   to: string;
   highlight?: boolean;
-  external?: boolean
+  external?: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const MenuItem = ({
@@ -14,12 +15,17 @@ export const MenuItem = ({
   to,
   highlight,
   external,
+  setIsOpen,
   ...rest
 }: MenuItemProps) => {
   return (
-    <Link href={external? `/${to}`: to} _hover={{ textDecor: "none" }}>
+    <Link
+      onClick={() => setIsOpen(false)}
+      href={external ? `/${to}` : to}
+      _hover={{ textDecor: "none" }}
+    >
       <Text
-        textAlign={["left","left","center","center",]}
+        textAlign={["left", "left", "center", "center"]}
         display={"flex"}
         alignItems="center"
         align={"center"}

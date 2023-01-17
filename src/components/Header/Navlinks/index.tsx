@@ -8,14 +8,12 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 
-
 interface NavLinksProps {
   isOpen: boolean;
-  external?: boolean
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const NavLinks = ({ isOpen, external }: NavLinksProps) => {
-
+export const NavLinks = ({ isOpen, setIsOpen }: NavLinksProps) => {
   return (
     <Flex
       display={{ base: isOpen ? "block" : "none", lg: "flex" }}
@@ -29,16 +27,28 @@ export const NavLinks = ({ isOpen, external }: NavLinksProps) => {
         pt={[10, 10, 10, 0]}
         paddingRight={[5]}
       >
-        <MenuItem external to="#">Início</MenuItem>
-        <MenuItem external to="#highlights">Novidades</MenuItem>
-        <MenuItem external to="#QuemSomos">Quem somos</MenuItem>
-        <MenuItem external to="#FundamentalI">Fundamental I</MenuItem>
-        <MenuItem external to="#FundamentalII">Fundamental II</MenuItem>
-        <MenuItem external to="#EnsinoMedio">Ensino Médio</MenuItem>
-        <MenuItem external to="#CPV">
+        <MenuItem external setIsOpen={setIsOpen} to="#">
+          Início
+        </MenuItem>
+        <MenuItem external setIsOpen={setIsOpen} to="#highlights">
+          Novidades
+        </MenuItem>
+        <MenuItem external setIsOpen={setIsOpen} to="#QuemSomos">
+          Quem somos
+        </MenuItem>
+        <MenuItem external setIsOpen={setIsOpen} to="#FundamentalI">
+          Fundamental I
+        </MenuItem>
+        <MenuItem external setIsOpen={setIsOpen} to="#FundamentalII">
+          Fundamental II
+        </MenuItem>
+        <MenuItem external setIsOpen={setIsOpen} to="#EnsinoMedio">
+          Ensino Médio
+        </MenuItem>
+        <MenuItem external setIsOpen={setIsOpen} to="#CPV">
           Curso <br></br>Pré-Vestibular
         </MenuItem>
-        <MenuItem external to="#CPM">
+        <MenuItem external setIsOpen={setIsOpen} to="#CPM">
           Curso <br></br>Pré-Militar
         </MenuItem>
       </Stack>

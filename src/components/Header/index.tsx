@@ -46,7 +46,7 @@ export const Header = ({external}: IExternal) => {
         onClick={() => navigate("/")}
       />
       <MenuToogle isOpen={isOpen} toggle={toggle} />
-      <NavLinks isOpen={isOpen} external={external}/>
-    </Flex>
+      <NavLinks setIsOpen={setIsOpen} isOpen={isOpen} />
+    </Flex> 
   );
 };
