@@ -4,10 +4,8 @@ import { InfoHighlightsSmallCard } from "../InfoHighlightSmallCard";
 
 export const InfoHighlightsSection = () => {
   return (
-    <Flex flexDirection="column" gap="2rem" padding="2rem">
-      <Heading margin="0 auto">
-        Notícias
-      </Heading>
+    <Flex flexDirection="column" gap="2rem" padding="2rem" id="highlights">
+      <Heading margin="0 auto">Notícias</Heading>
       <Divider />
       <Flex
         flexDirection={["column", "column", "column", "column", "row", "row"]}
@@ -41,7 +39,7 @@ export const InfoHighlightsSection = () => {
             <InfoHighlightsSmallCard path={"/"} />
             <InfoHighlightsSmallCard path={"/"} />
           </Flex>
-          <Link href="/" color="blue" marginTop={["0", "0", "3rem"]}>
+          <Link href="/news" color="blue" marginTop={["0", "0", "3rem"]}>
             Veja mais notícias...
           </Link>
         </Flex>
