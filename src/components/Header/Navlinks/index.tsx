@@ -64,7 +64,11 @@ export const NavLinks = ({ isOpen, setIsOpen }: NavLinksProps) => {
         >
           <AiFillInstagram size={"25px"} cursor="pointer" />
         </Link>
-        <Link href="https://wa.me/556733849044" _hover={{ color: "red.500" }}>
+        <Link
+          href="https://wa.me/556733849044"
+          _hover={{ color: "red.500" }}
+          target="_blank"
+        >
           <AiOutlineWhatsApp size={"25px"} cursor="pointer" />
         </Link>
         <Link

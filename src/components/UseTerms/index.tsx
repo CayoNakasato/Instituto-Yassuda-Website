@@ -21,6 +21,8 @@ export const UseTerms = () => {
       gap={"1rem"}
       p="1rem"
       textAlign="left"
+      marginBottom={"3rem"}
+      padding={"4rem"}
     >
       <Image src={Logo} maxW="400px" mb={"2rem"} />
       <Heading>POLÍTICA DE PRIVACIDADE</Heading>
@@ -68,7 +70,7 @@ export const UseTerms = () => {
         necessárias para proteger seus dados contra perdas acidentais ou
         alterações, acesso, uso ou divulgação não autorizados, tendo também
         estabelecido procedimentos para reagir perante qualquer incidente de
-        segurança que possa afetar seus dados pessoais. Soemte nós, do Instituto
+        segurança que possa afetar seus dados pessoais. Somente nós, do Instituto
         Yassuda, temos permissão de utilizar imagens de imagem, assim como foi
         autorizado, no termo de autorização de imagem ao se matricular na
         escola.
