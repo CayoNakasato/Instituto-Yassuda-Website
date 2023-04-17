@@ -36,9 +36,6 @@ export const NavLinks = ({ isOpen, setIsOpen }: NavLinksProps) => {
         <MenuItem external setIsOpen={setIsOpen} to="#QuemSomos">
           Quem somos
         </MenuItem>
-        <MenuItem external setIsOpen={setIsOpen} to="#FundamentalI">
-          Fundamental I
-        </MenuItem>
         <MenuItem external setIsOpen={setIsOpen} to="#FundamentalII">
           Fundamental II
         </MenuItem>
