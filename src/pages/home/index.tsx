@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import { CarouselComponent } from "../../components/Carousel";
 import { Footer } from "../../components/Footer";
 import { GradeSection } from "../../components/GradeSection";
@@ -24,9 +24,7 @@ export const HomePage = () => {
       <Box>
         <GradeSection hightlight>
           <Box id="QuemSomos" position="absolute" top="-100"></Box>
-          <Heading textAlign={["center"]}>
-            Quem somos
-          </Heading>
+          <Heading textAlign={["center"]}>Quem somos</Heading>
           <ContentSection img={ImageSchool}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sed
             neque adipisci tempora quisquam porro, at dolore quas dignissimos
@@ -47,44 +45,9 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
         <GradeSection>
-          <Box id="FundamentalI" position="absolute" top="-100"></Box>
-
-          <Heading textAlign={["center"]}>
-            Fundamental I
-          </Heading>
-          <ContentSection img={ImageSchool}>
-            <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-              sed neque adipisci tempora quisquam porro, at dolore quas
-              dignissimos totam in eos sint iste eligendi, natus explicabo,
-              libero maxime? Culpa.
-            </Text>
-            <Text>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-              sed neque adipisci tempora quisquam porro, at dolore quas
-              dignissimos totam in eos sint iste eligendi, natus explicabo,
-              libero maxime? Culpa.
-            </Text>
-          </ContentSection>
-          <ContentSection img={ImageSchool} reverse>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sed
-            neque adipisci tempora quisquam porro, at dolore quas dignissimos
-            totam in eos sint iste eligendi, natus explicabo, libero maxime?
-            Culpa.
-          </ContentSection>
-          <ContentSection img={ImageSchool}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sed
-            neque adipisci tempora quisquam porro, at dolore quas dignissimos
-            totam in eos sint iste eligendi, natus explicabo, libero maxime?
-            Culpa.
-          </ContentSection>
-        </GradeSection>
-        <GradeSection hightlight>
           <Box id="FundamentalII" position="absolute" top="-100"></Box>
 
-          <Heading textAlign={["center"]}>
-            Fundamental II
-          </Heading>
+          <Heading textAlign={["center"]}>Fundamental II</Heading>
           <ContentSection img={ImageSchool}>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -112,12 +75,10 @@ export const HomePage = () => {
             Culpa.
           </ContentSection>
         </GradeSection>
-        <GradeSection>
+        <GradeSection hightlight>
           <Box id="EnsinoMedio" position="absolute" top="-100"></Box>
 
-          <Heading textAlign={["center"]}>
-            Ensino Médio
-          </Heading>
+          <Heading textAlign={["center"]}>Ensino Médio</Heading>
           <ContentSection img={ImageSchool}>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -146,12 +107,10 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
 
-        <GradeSection hightlight>
+        <GradeSection>
           <Box id="CPV" position="absolute" top="-100"></Box>
 
-          <Heading textAlign={["center"]}>
-            Curso Pré-Vestibular
-          </Heading>
+          <Heading textAlign={["center"]}>Curso Pré-Vestibular</Heading>
           <ContentSection img={ImageSchool}>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -180,6 +139,8 @@ export const HomePage = () => {
           </ContentSection>
         </GradeSection>
       </Box>
+
+      <Divider />
 
       <MilitarySection />
 

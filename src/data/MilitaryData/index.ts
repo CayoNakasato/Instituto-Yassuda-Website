@@ -21,7 +21,7 @@ export const infoMilitaryData = [
     ],
   },
   {
-    title: "EEAR",
+    title: "EEAr",
     content: [
       {
         name: "Escola de Especialistas de Aeronáutica",
@@ -50,7 +50,7 @@ export const infoMilitaryData = [
     ],
   },
   {
-    title: "ESPECEX",
+    title: "EsPECEx",
     content: [
       {
         name: "Escola Preparatória de Cadetes do Exército",
